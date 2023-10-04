@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		0E403CB52A79065E003D7CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E403CB42A79065E003D7CBF /* AppDelegate.swift */; };
 		0E403CB72A79065E003D7CBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E403CB62A79065E003D7CBF /* SceneDelegate.swift */; };
-		0E403CB92A79065E003D7CBF /* ImagesListViewController.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E403CB82A79065E003D7CBF /* ImagesListViewController.swift.swift */; };
+		0E403CB92A79065E003D7CBF /* ImagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E403CB82A79065E003D7CBF /* ImagesListViewController.swift */; };
 		0E403CBC2A79065E003D7CBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E403CBA2A79065E003D7CBF /* Main.storyboard */; };
 		0E403CBE2A79065F003D7CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E403CBD2A79065F003D7CBF /* Assets.xcassets */; };
 		0E403CC12A79065F003D7CBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E403CBF2A79065F003D7CBF /* LaunchScreen.storyboard */; };
+		0EBF8E8C2ACCB41A00C16D17 /* ImagesListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EBF8E8B2ACCB41A00C16D17 /* ImagesListCell.xib */; };
 		0EC98AAA2A81477F000444AC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC98AA92A81477F000444AC /* UIColor+Extensions.swift */; };
 		0EC98AAC2A828B9E000444AC /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC98AAB2A828B9E000444AC /* ImagesListCell.swift */; };
 /* End PBXBuildFile section */
@@ -21,11 +22,12 @@
 		0E403CB12A79065E003D7CBF /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E403CB42A79065E003D7CBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E403CB62A79065E003D7CBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0E403CB82A79065E003D7CBF /* ImagesListViewController.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewController.swift.swift; sourceTree = "<group>"; };
+		0E403CB82A79065E003D7CBF /* ImagesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewController.swift; sourceTree = "<group>"; };
 		0E403CBB2A79065E003D7CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E403CBD2A79065F003D7CBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E403CC02A79065F003D7CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E403CC22A79065F003D7CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EBF8E8B2ACCB41A00C16D17 /* ImagesListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesListCell.xib; sourceTree = "<group>"; };
 		0EC98AA92A81477F000444AC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		0EC98AAB2A828B9E000444AC /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,8 +93,9 @@
 		0EC98AAD2A828C11000444AC /* ImagesList */ = {
 			isa = PBXGroup;
 			children = (
-				0E403CB82A79065E003D7CBF /* ImagesListViewController.swift.swift */,
+				0E403CB82A79065E003D7CBF /* ImagesListViewController.swift */,
 				0EC98AAB2A828B9E000444AC /* ImagesListCell.swift */,
+				0EBF8E8B2ACCB41A00C16D17 /* ImagesListCell.xib */,
 			);
 			path = ImagesList;
 			sourceTree = "<group>";
@@ -128,7 +131,7 @@
 					New,
 				);
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					0E403CB02A79065E003D7CBF = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E403CC12A79065F003D7CBF /* LaunchScreen.storyboard in Resources */,
+				0EBF8E8C2ACCB41A00C16D17 /* ImagesListCell.xib in Resources */,
 				0E403CBE2A79065F003D7CBF /* Assets.xcassets in Resources */,
 				0E403CBC2A79065E003D7CBF /* Main.storyboard in Resources */,
 			);
@@ -171,7 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E403CB92A79065E003D7CBF /* ImagesListViewController.swift.swift in Sources */,
+				0E403CB92A79065E003D7CBF /* ImagesListViewController.swift in Sources */,
 				0E403CB52A79065E003D7CBF /* AppDelegate.swift in Sources */,
 				0EC98AAC2A828B9E000444AC /* ImagesListCell.swift in Sources */,
 				0E403CB72A79065E003D7CBF /* SceneDelegate.swift in Sources */,
@@ -205,6 +209,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -237,6 +242,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -265,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -297,6 +304,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -329,7 +337,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -362,7 +369,6 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
