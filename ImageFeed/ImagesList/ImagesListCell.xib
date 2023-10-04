@@ -37,7 +37,7 @@
                         <state key="normal" image="likeButtonOn"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 августа 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFN-yf-5ZS" userLabel="DataLabel">
-                        <rect key="frame" x="24" y="196" width="390" height="16"/>
+                        <rect key="frame" x="24" y="196" width="382" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" name="YP White"/>
                         <nil key="highlightedColor"/>
@@ -53,7 +53,7 @@
                     <constraint firstItem="fuF-qh-lbk" firstAttribute="top" secondItem="qT1-Fz-HKL" secondAttribute="top" constant="4" id="JzF-fE-hrn"/>
                     <constraint firstItem="fuF-qh-lbk" firstAttribute="leading" secondItem="qT1-Fz-HKL" secondAttribute="leading" constant="16" id="Zeq-lU-h0i"/>
                     <constraint firstAttribute="trailing" secondItem="fuF-qh-lbk" secondAttribute="trailing" constant="16" id="fvo-Gl-2e4"/>
-                    <constraint firstItem="eFN-yf-5ZS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fuF-qh-lbk" secondAttribute="trailing" id="oFd-tW-A2I"/>
+                    <constraint firstItem="eFN-yf-5ZS" firstAttribute="trailing" secondItem="fuF-qh-lbk" secondAttribute="trailing" constant="-8" id="oFd-tW-A2I"/>
                     <constraint firstItem="thz-rJ-mDb" firstAttribute="trailing" secondItem="fuF-qh-lbk" secondAttribute="trailing" id="r2e-Zc-xOx"/>
                 </constraints>
             </tableViewCellContentView>

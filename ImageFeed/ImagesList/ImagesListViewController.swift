@@ -16,7 +16,6 @@ class ImagesListViewController: UIViewController {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "ImagesListCell", bundle: nil), forCellReuseIdentifier: ImagesListCell.reuseIdentifier)
         photosName = Array(0..<20).map{"\($0)"}
-        
     }
     
     private lazy var dateFormatter: DateFormatter = {
@@ -62,6 +61,8 @@ extension ImagesListViewController: UITableViewDelegate {
         return cellHeight
     }
 }
+
+
 
 
 
