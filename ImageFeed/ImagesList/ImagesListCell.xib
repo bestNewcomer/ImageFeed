@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="fuF-qh-lbk" userLabel="ImageCell">
-                        <rect key="frame" x="20" y="11" width="390" height="202"/>
+                        <rect key="frame" x="16" y="4" width="398" height="216"/>
                         <color key="backgroundColor" name="YP Background"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -28,7 +28,7 @@
                         </userDefinedRuntimeAttributes>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thz-rJ-mDb" userLabel="LikeButton">
-                        <rect key="frame" x="366" y="11" width="44" height="44"/>
+                        <rect key="frame" x="370" y="4" width="44" height="44"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="44" id="bN8-8o-A4U"/>
                             <constraint firstAttribute="width" constant="44" id="vo7-4Q-TLo"/>
@@ -37,7 +37,7 @@
                         <state key="normal" image="likeButtonOn"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 августа 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFN-yf-5ZS" userLabel="DataLabel">
-                        <rect key="frame" x="28" y="189.33333333333334" width="374" height="15.666666666666657"/>
+                        <rect key="frame" x="24" y="196" width="390" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" name="YP White"/>
                         <nil key="highlightedColor"/>
@@ -45,15 +45,16 @@
                 </subviews>
                 <color key="backgroundColor" name="YP Background"/>
                 <constraints>
-                    <constraint firstItem="thz-rJ-mDb" firstAttribute="top" secondItem="fuF-qh-lbk" secondAttribute="top" id="3dq-dT-szz"/>
-                    <constraint firstItem="eFN-yf-5ZS" firstAttribute="leading" secondItem="fuF-qh-lbk" secondAttribute="leading" constant="8" id="Aqm-9p-dEx"/>
-                    <constraint firstItem="fuF-qh-lbk" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="eFN-yf-5ZS" secondAttribute="trailing" constant="8" id="Bpt-TM-5J4"/>
-                    <constraint firstItem="thz-rJ-mDb" firstAttribute="trailing" secondItem="fuF-qh-lbk" secondAttribute="trailing" id="K79-Tk-wUU"/>
-                    <constraint firstItem="fuF-qh-lbk" firstAttribute="bottom" secondItem="eFN-yf-5ZS" secondAttribute="bottom" constant="8" id="SUP-Ub-I4U"/>
-                    <constraint firstItem="fuF-qh-lbk" firstAttribute="top" secondItem="qT1-Fz-HKL" secondAttribute="topMargin" id="ZdO-40-cCp"/>
-                    <constraint firstItem="fuF-qh-lbk" firstAttribute="leading" secondItem="qT1-Fz-HKL" secondAttribute="leadingMargin" id="m5J-fQ-mzg"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="fuF-qh-lbk" secondAttribute="trailing" id="nYj-tk-ZlS"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="fuF-qh-lbk" secondAttribute="bottom" id="pAe-OZ-MJ0"/>
+                    <constraint firstItem="eFN-yf-5ZS" firstAttribute="top" relation="greaterThanOrEqual" secondItem="fuF-qh-lbk" secondAttribute="top" id="2Jb-v4-ren"/>
+                    <constraint firstItem="eFN-yf-5ZS" firstAttribute="bottom" secondItem="fuF-qh-lbk" secondAttribute="bottom" constant="-8" id="7BC-DY-xdp"/>
+                    <constraint firstItem="thz-rJ-mDb" firstAttribute="top" secondItem="fuF-qh-lbk" secondAttribute="top" id="GKx-HV-nKZ"/>
+                    <constraint firstItem="eFN-yf-5ZS" firstAttribute="leading" secondItem="fuF-qh-lbk" secondAttribute="leading" constant="8" id="GRL-Rv-G6d"/>
+                    <constraint firstAttribute="bottom" secondItem="fuF-qh-lbk" secondAttribute="bottom" constant="4" id="J9T-pF-iVB"/>
+                    <constraint firstItem="fuF-qh-lbk" firstAttribute="top" secondItem="qT1-Fz-HKL" secondAttribute="top" constant="4" id="JzF-fE-hrn"/>
+                    <constraint firstItem="fuF-qh-lbk" firstAttribute="leading" secondItem="qT1-Fz-HKL" secondAttribute="leading" constant="16" id="Zeq-lU-h0i"/>
+                    <constraint firstAttribute="trailing" secondItem="fuF-qh-lbk" secondAttribute="trailing" constant="16" id="fvo-Gl-2e4"/>
+                    <constraint firstItem="eFN-yf-5ZS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fuF-qh-lbk" secondAttribute="trailing" id="oFd-tW-A2I"/>
+                    <constraint firstItem="thz-rJ-mDb" firstAttribute="trailing" secondItem="fuF-qh-lbk" secondAttribute="trailing" id="r2e-Zc-xOx"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" name="YP Background"/>
@@ -62,7 +63,7 @@
                 <outlet property="imageCell" destination="fuF-qh-lbk" id="zaR-hc-i4E"/>
                 <outlet property="likeButton" destination="thz-rJ-mDb" id="eEr-Iu-Css"/>
             </connections>
-            <point key="canvasLocation" x="-278" y="38"/>
+            <point key="canvasLocation" x="-279.38931297709922" y="37.323943661971832"/>
         </tableViewCell>
     </objects>
     <resources>

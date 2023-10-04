@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yQw-Vx-DyV">
-                                <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                                <rect key="frame" x="0.0" y="59" width="430" height="839"/>
                                 <color key="backgroundColor" name="YP Background"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="EM3-GA-srm"/>
@@ -29,10 +29,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="YP Background"/>
                         <constraints>
-                            <constraint firstItem="yQw-Vx-DyV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0YI-Ae-Rmp"/>
-                            <constraint firstAttribute="trailing" secondItem="yQw-Vx-DyV" secondAttribute="trailing" id="1R6-Lx-r2q"/>
-                            <constraint firstAttribute="bottom" secondItem="yQw-Vx-DyV" secondAttribute="bottom" id="58X-gT-gNc"/>
-                            <constraint firstItem="yQw-Vx-DyV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mNI-7d-91D"/>
+                            <constraint firstItem="yQw-Vx-DyV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0YI-Ae-Rmp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yQw-Vx-DyV" secondAttribute="trailing" id="1R6-Lx-r2q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yQw-Vx-DyV" secondAttribute="bottom" id="58X-gT-gNc"/>
+                            <constraint firstItem="yQw-Vx-DyV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mNI-7d-91D"/>
                         </constraints>
                     </view>
                     <connections>
