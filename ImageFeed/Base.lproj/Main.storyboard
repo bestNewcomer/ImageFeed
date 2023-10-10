@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bz5-FK-fB4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -35,13 +35,33 @@
                             <constraint firstItem="yQw-Vx-DyV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mNI-7d-91D"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab_editorial_active" id="gb6-mn-EM8"/>
                     <connections>
                         <outlet property="tableView" destination="yQw-Vx-DyV" id="bRq-Ux-ir4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139.69465648854961" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="-939" y="-1318"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2jO-J8-atg">
+            <objects>
+                <tabBarController id="Bz5-FK-fB4" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vn4-bg-kcK">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="YP Background"/>
+                        <color key="selectedImageTintColor" name="YP White"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="8fu-d6-KXZ"/>
+                        <segue destination="Y9h-6m-cxb" kind="relationship" relationship="viewControllers" id="fHt-1r-rN2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gJ-aH-0GI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2159" y="-980"/>
         </scene>
         <!--IsInitialViewController-->
         <scene sceneID="a1m-pe-Scj">
@@ -72,7 +92,7 @@
                                     <constraint firstAttribute="width" constant="44" id="bGY-qn-i5F"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="exit"/>
+                                <buttonConfiguration key="configuration" style="plain" image="exitButton"/>
                                 <connections>
                                     <action selector="buttonExit:" destination="Y9h-6m-cxb" eventType="touchUpInside" id="AH7-J5-7ri"/>
                                 </connections>
@@ -123,6 +143,7 @@
                             <constraint firstItem="wV8-O2-tGK" firstAttribute="leading" secondItem="KGq-ZN-WZL" secondAttribute="leading" constant="16" id="vVn-X8-c70"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab_profile_active" id="W9N-93-xmB"/>
                     <connections>
                         <outlet property="buttonExit" destination="dHh-kb-lMU" id="Oyi-rT-xxf"/>
                         <outlet property="idUser" destination="n6R-wQ-CDK" id="Xgh-4W-tmA"/>
@@ -137,8 +158,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="exit" width="44" height="44"/>
-        <image name="profile" width="140" height="140"/>
+        <image name="exitButton" width="44" height="44"/>
+        <image name="profile" width="70" height="70"/>
+        <image name="tab_editorial_active" width="20" height="22"/>
+        <image name="tab_profile_active" width="24" height="24"/>
         <namedColor name="YP Background">
             <color red="0.10199999809265137" green="0.10599999874830246" blue="0.13300000131130219" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
