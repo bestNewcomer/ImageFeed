@@ -13,8 +13,8 @@
 		0E403CBC2A79065E003D7CBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E403CBA2A79065E003D7CBF /* Main.storyboard */; };
 		0E403CBE2A79065F003D7CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E403CBD2A79065F003D7CBF /* Assets.xcassets */; };
 		0E403CC12A79065F003D7CBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E403CBF2A79065F003D7CBF /* LaunchScreen.storyboard */; };
+		0E4E71392AD5B28A0045D41D /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4E71382AD5B28A0045D41D /* SingleImageViewController.swift */; };
 		0E54EC4A2AD575C500B3040B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E54EC492AD575C500B3040B /* ProfileViewController.swift */; };
-		0EBF8E8C2ACCB41A00C16D17 /* ImagesListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EBF8E8B2ACCB41A00C16D17 /* ImagesListCell.xib */; };
 		0EC98AAA2A81477F000444AC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC98AA92A81477F000444AC /* UIColor+Extensions.swift */; };
 		0EC98AAC2A828B9E000444AC /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC98AAB2A828B9E000444AC /* ImagesListCell.swift */; };
 /* End PBXBuildFile section */
@@ -28,8 +28,8 @@
 		0E403CBD2A79065F003D7CBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E403CC02A79065F003D7CBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E403CC22A79065F003D7CBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E4E71382AD5B28A0045D41D /* SingleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
 		0E54EC492AD575C500B3040B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		0EBF8E8B2ACCB41A00C16D17 /* ImagesListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesListCell.xib; sourceTree = "<group>"; };
 		0EC98AA92A81477F000444AC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		0EC98AAB2A828B9E000444AC /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,6 +71,7 @@
 				0EC98AAD2A828C11000444AC /* ImagesList */,
 				0E403CBA2A79065E003D7CBF /* Main.storyboard */,
 				0EC98AA72A814211000444AC /* Resources */,
+				0E4E71382AD5B28A0045D41D /* SingleImageViewController.swift */,
 			);
 			path = ImageFeed;
 			sourceTree = "<group>";
@@ -106,7 +107,6 @@
 			children = (
 				0E403CB82A79065E003D7CBF /* ImagesListViewController.swift */,
 				0EC98AAB2A828B9E000444AC /* ImagesListCell.swift */,
-				0EBF8E8B2ACCB41A00C16D17 /* ImagesListCell.xib */,
 			);
 			path = ImagesList;
 			sourceTree = "<group>";
@@ -173,7 +173,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E403CC12A79065F003D7CBF /* LaunchScreen.storyboard in Resources */,
-				0EBF8E8C2ACCB41A00C16D17 /* ImagesListCell.xib in Resources */,
 				0E403CBE2A79065F003D7CBF /* Assets.xcassets in Resources */,
 				0E403CBC2A79065E003D7CBF /* Main.storyboard in Resources */,
 			);
@@ -189,6 +188,7 @@
 				0E54EC4A2AD575C500B3040B /* ProfileViewController.swift in Sources */,
 				0E403CB92A79065E003D7CBF /* ImagesListViewController.swift in Sources */,
 				0E403CB52A79065E003D7CBF /* AppDelegate.swift in Sources */,
+				0E4E71392AD5B28A0045D41D /* SingleImageViewController.swift in Sources */,
 				0EC98AAC2A828B9E000444AC /* ImagesListCell.swift in Sources */,
 				0E403CB72A79065E003D7CBF /* SceneDelegate.swift in Sources */,
 				0EC98AAA2A81477F000444AC /* UIColor+Extensions.swift in Sources */,
@@ -355,7 +355,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ru.yandex.practicum.ImageFeed;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.bestNewcomer.practicum.ImageFeed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
