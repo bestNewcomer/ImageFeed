@@ -41,10 +41,6 @@
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Qy-lK-Rx6" userLabel="LikeButton">
                                                     <rect key="frame" x="354" y="4" width="44" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="7PW-eK-KgM"/>
-                                                        <constraint firstAttribute="width" constant="44" id="9FJ-uW-Eav"/>
-                                                    </constraints>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="likeButtonOn"/>
                                                 </button>
@@ -92,15 +88,16 @@
                             <constraint firstItem="yQw-Vx-DyV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mNI-7d-91D"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab_editorial_active" id="QYz-Bl-3y8"/>
                     <navigationItem key="navigationItem" id="w2p-Tk-HQW"/>
                     <connections>
                         <outlet property="tableView" destination="yQw-Vx-DyV" id="bRq-Ux-ir4"/>
-                        <segue destination="oGH-Fj-fzd" kind="show" identifier="ShowSingleImage" id="9gt-bc-9xo"/>
+                        <segue destination="oGH-Fj-fzd" kind="presentation" identifier="ShowSingleImage" id="9gt-bc-9xo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-28.985507246376812" y="-1318.5267857142856"/>
+            <point key="canvasLocation" x="-939" y="-1319"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2jO-J8-atg">
@@ -116,8 +113,8 @@
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
-                        <segue destination="ly2-46-nNq" kind="relationship" relationship="viewControllers" id="8fu-d6-KXZ"/>
-                        <segue destination="Y9h-6m-cxb" kind="relationship" relationship="viewControllers" id="fHt-1r-rN2"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="DE1-Hd-hA0"/>
+                        <segue destination="Y9h-6m-cxb" kind="relationship" relationship="viewControllers" id="nbP-5B-5F4"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gJ-aH-0GI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -215,52 +212,42 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0JH-Tz-q0x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-914" y="-673"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="BjM-NI-CCf">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ly2-46-nNq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="tab_editorial_active" id="gb6-mn-EM8"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Orj-S0-9nb">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" name="YP White"/>
-                        <color key="barTintColor" name="YP White"/>
-                        <navigationBarAppearance key="standardAppearance">
-                            <color key="backgroundColor" name="YP Black"/>
-                        </navigationBarAppearance>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2LV-fN-5jC"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P1W-74-vXr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-939.13043478260875" y="-1318.5267857142856"/>
+            <point key="canvasLocation" x="-939" y="-674"/>
         </scene>
         <!--Single Image View Controller-->
         <scene sceneID="r2v-9N-jNV">
             <objects>
-                <viewController id="oGH-Fj-fzd" customClass="SingleImageViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="oGH-Fj-fzd" customClass="SingleImageViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aMf-Ad-sHN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="RB7-HR-d03">
-                                <rect key="frame" x="0.0" y="92" width="414" height="721"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" name="YP Black"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kc2-fo-CvX">
+                                <rect key="frame" x="8" y="8" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Lrp-PE-e8g"/>
+                                    <constraint firstAttribute="width" constant="48" id="jRk-KC-ud5"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="backwardButton"/>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="oGH-Fj-fzd" eventType="touchUpInside" id="SEx-au-Gns"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xL2-j1-Z31"/>
                         <color key="backgroundColor" name="YP Black"/>
                         <constraints>
-                            <constraint firstItem="RB7-HR-d03" firstAttribute="top" secondItem="xL2-j1-Z31" secondAttribute="top" id="2CR-xj-FCD"/>
-                            <constraint firstItem="RB7-HR-d03" firstAttribute="leading" secondItem="xL2-j1-Z31" secondAttribute="leading" id="76h-f5-Pvv"/>
-                            <constraint firstItem="xL2-j1-Z31" firstAttribute="bottom" secondItem="RB7-HR-d03" secondAttribute="bottom" id="K2U-I5-Za1"/>
-                            <constraint firstItem="xL2-j1-Z31" firstAttribute="trailing" secondItem="RB7-HR-d03" secondAttribute="trailing" id="RnF-Vm-JLV"/>
+                            <constraint firstItem="RB7-HR-d03" firstAttribute="top" secondItem="aMf-Ad-sHN" secondAttribute="top" id="2CR-xj-FCD"/>
+                            <constraint firstItem="Kc2-fo-CvX" firstAttribute="top" secondItem="xL2-j1-Z31" secondAttribute="top" constant="8" id="5lx-gt-fQb"/>
+                            <constraint firstItem="RB7-HR-d03" firstAttribute="leading" secondItem="aMf-Ad-sHN" secondAttribute="leading" id="76h-f5-Pvv"/>
+                            <constraint firstAttribute="bottom" secondItem="RB7-HR-d03" secondAttribute="bottom" id="K2U-I5-Za1"/>
+                            <constraint firstAttribute="trailing" secondItem="RB7-HR-d03" secondAttribute="trailing" id="RnF-Vm-JLV"/>
+                            <constraint firstItem="Kc2-fo-CvX" firstAttribute="leading" secondItem="xL2-j1-Z31" secondAttribute="leading" constant="8" id="upb-CY-Q99"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="HM1-uq-YjW"/>
@@ -270,11 +257,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Dh-LR-zsw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="-1319"/>
+            <point key="canvasLocation" x="-59" y="-1319"/>
         </scene>
     </scenes>
     <resources>
         <image name="0" width="200" height="132"/>
+        <image name="backwardButton" width="9" height="16"/>
         <image name="exitButton" width="44" height="44"/>
         <image name="likeButtonOn" width="44" height="44"/>
         <image name="profile" width="70" height="70"/>
