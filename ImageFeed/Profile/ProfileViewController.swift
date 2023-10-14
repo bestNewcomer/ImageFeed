@@ -2,76 +2,82 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
     
-    let imageView = UIImageView()
-    let nameUser = UILabel()
-    let idUser = UILabel()
-    let statusUser = UILabel()
-    let buttonLogout = UIButton()
+    private var profileImageView: UIImageView = {
+        let profileImage = UIImageView(image: UIImage(named: "profile"))
+        profileImage.translatesAutoresizingMaskIntoConstraints = false
+        return profileImage
+    }()
     
+    private var nameLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Екатерина Новикова"
+        label.font = UIFont.systemFont(ofSize: 23, weight: .bold)
+        label.textColor = .white
+        return label
+    }()
+    private var idLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "@ekaterina_nov"
+        label.font = UIFont(name: "System", size: 13)
+        label.textColor = .gray
+        return label
+    }()
+    private var statusLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.text = "Hello, world!"
+        label.font = UIFont(name: "System", size: 13)
+        label.textColor = .white
+        return label
+    }()
+    
+    private var logoutButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setImage(UIImage(named: "exitButton"), for: .normal)
+        button.addTarget(ProfileViewController.self, action: #selector(tapLogoutButton), for: .touchUpInside)
+        return button
+    }()
+    
+    
+    private func addSubView(){
+        view.addSubview(profileImageView)
+        view.addSubview(nameLabel)
+        view.addSubview(idLabel)
+        view.addSubview(statusLabel)
+        view.addSubview(logoutButton)
+    }
+    
+    private func applyConstraints(){
+        NSLayoutConstraint.activate([
+            profileImageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+            profileImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 76),
+            profileImageView.widthAnchor.constraint(equalToConstant: 70),
+            profileImageView.heightAnchor.constraint(equalToConstant: 70),
+            nameLabel.leadingAnchor.constraint(equalTo: profileImageView.leadingAnchor),
+            nameLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 8),
+            nameLabel.leadingAnchor.constraint(equalTo: profileImageView.leadingAnchor),
+            nameLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 8),
+            idLabel.leadingAnchor.constraint(equalTo: profileImageView.leadingAnchor),
+            idLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 8),
+            statusLabel.leadingAnchor.constraint(equalTo: profileImageView.leadingAnchor),
+            statusLabel.topAnchor.constraint(equalTo: idLabel.bottomAnchor, constant: 8),
+            logoutButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
+            logoutButton.centerYAnchor.constraint(equalTo: profileImageView.centerYAnchor)
+        ])
+    }
     @objc
-    func tapButtonLogout() {
+    func tapLogoutButton() {
     }
     
-    private func image(){
-        let profileImage = UIImage(named: "profile")
-        imageView.image = profileImage
-        imageView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(imageView)
-        
-        imageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16).isActive = true
-        imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 78).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 70).isActive = true
-        imageView.heightAnchor.constraint(equalToConstant: 70).isActive = true
-    }
-    
-    private func name(){
-        
-        nameUser.text = "Екатерина Новикова"
-        nameUser.font = UIFont.systemFont(ofSize: 23, weight: .bold)
-        nameUser.textColor = .white
-        nameUser.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(nameUser)
-        nameUser.leadingAnchor.constraint(equalTo: imageView.leadingAnchor).isActive = true
-        nameUser.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 8).isActive = true
-    }
-    
-    private func id() {
-        idUser.text = "@ekaterina_nov"
-        idUser.font = UIFont(name: "System", size: 13)
-        idUser.textColor = .gray
-        idUser.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(idUser)
-        idUser.leadingAnchor.constraint(equalTo: imageView.leadingAnchor).isActive = true
-        idUser.topAnchor.constraint(equalTo: nameUser.bottomAnchor, constant: 8).isActive = true
-    }
-    
-    private func status() {
-        statusUser.text = "Hello, world!"
-        statusUser.font = UIFont(name: "System", size: 13)
-        statusUser.textColor = .white
-        statusUser.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(statusUser)
-        statusUser.leadingAnchor.constraint(equalTo: imageView.leadingAnchor).isActive = true
-        statusUser.topAnchor.constraint(equalTo: idUser.bottomAnchor, constant: 8).isActive = true
-    }
-    
-    private func logout() {
-        buttonLogout.setImage(UIImage(named: "exitButton"), for: .normal)
-        buttonLogout.addTarget(self, action: #selector(self.tapButtonLogout), for: .touchUpInside)
-        buttonLogout.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(buttonLogout)
-        buttonLogout.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16).isActive = true
-        buttonLogout.centerYAnchor.constraint(equalTo: imageView.centerYAnchor).isActive = true
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .black
+        view.backgroundColor = .ypBlack
     
-        image()
-        name()
-        id()
-        status()
-        logout()
+        addSubView()
+        applyConstraints()
     }
 }
