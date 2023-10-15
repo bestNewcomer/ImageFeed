@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E2F7F612ADC5ECD0099659C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2F7F602ADC5ECD0099659C /* Constants.swift */; };
 		0E403CB52A79065E003D7CBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E403CB42A79065E003D7CBF /* AppDelegate.swift */; };
 		0E403CB72A79065E003D7CBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E403CB62A79065E003D7CBF /* SceneDelegate.swift */; };
 		0E403CB92A79065E003D7CBF /* ImagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E403CB82A79065E003D7CBF /* ImagesListViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E2F7F602ADC5ECD0099659C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0E403CB12A79065E003D7CBF /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E403CB42A79065E003D7CBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E403CB62A79065E003D7CBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,14 +66,15 @@
 		0E403CB32A79065E003D7CBF /* ImageFeed */ = {
 			isa = PBXGroup;
 			children = (
-				0E54EC482AD5759600B3040B /* Profile */,
-				0EC98AA82A814739000444AC /* Helpers */,
 				0E403CB42A79065E003D7CBF /* AppDelegate.swift */,
 				0E403CB62A79065E003D7CBF /* SceneDelegate.swift */,
+				0EC98AA82A814739000444AC /* Helpers */,
 				0EC98AAD2A828C11000444AC /* ImagesList */,
 				0E403CBA2A79065E003D7CBF /* Main.storyboard */,
+				0E54EC482AD5759600B3040B /* Profile */,
 				0EC98AA72A814211000444AC /* Resources */,
 				0EF7C9C22AD7439D00D993BE /* SingleImage */,
+				0E2F7F602ADC5ECD0099659C /* Constants.swift */,
 			);
 			path = ImageFeed;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				0EC98AAC2A828B9E000444AC /* ImagesListCell.swift in Sources */,
 				0E403CB72A79065E003D7CBF /* SceneDelegate.swift in Sources */,
 				0EC98AAA2A81477F000444AC /* UIColor+Extensions.swift in Sources */,
+				0E2F7F612ADC5ECD0099659C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
