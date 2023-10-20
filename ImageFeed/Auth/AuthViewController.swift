@@ -18,8 +18,10 @@ final class AuthViewController: UIViewController {
 
 extension AuthViewController: WebViewViewControllerDelegate {
     func webViewViewController(_ vc: WebViewViewController, didAuthenticateWithCode code: String) {
-        //TODO: process code
+        let oAuthService = OAuth2Service()
+        oAuthService.fetchOAuthToken(code, completion: <#T##(Result<String, Error>) -> Void#>)
         
+       
     }
     
     func webViewViewControllerDidCancel(_ vc: WebViewViewController) {

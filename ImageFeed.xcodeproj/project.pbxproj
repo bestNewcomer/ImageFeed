@@ -20,6 +20,8 @@
 		0EA53AAD2ADD92B3002612A7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA53AAC2ADD92B3002612A7 /* ProfileViewController.swift */; };
 		0EC98AAA2A81477F000444AC /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC98AA92A81477F000444AC /* UIColor+Extensions.swift */; };
 		0EC98AAC2A828B9E000444AC /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC98AAB2A828B9E000444AC /* ImagesListCell.swift */; };
+		0EF438122AE2DAD50025A508 /* OAuth2Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF438112AE2DAD50025A508 /* OAuth2Service.swift */; };
+		0EF438142AE2F5910025A508 /* OAuth2TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF438132AE2F5910025A508 /* OAuth2TokenStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		0EA53AAC2ADD92B3002612A7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0EC98AA92A81477F000444AC /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		0EC98AAB2A828B9E000444AC /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
+		0EF438112AE2DAD50025A508 /* OAuth2Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Service.swift; sourceTree = "<group>"; };
+		0EF438132AE2F5910025A508 /* OAuth2TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2TokenStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				0E2F7F652ADC64A50099659C /* AuthViewController.swift */,
 				0EA53AA92ADC6A09002612A7 /* WebViewViewController.swift */,
+				0EF438112AE2DAD50025A508 /* OAuth2Service.swift */,
+				0EF438132AE2F5910025A508 /* OAuth2TokenStorage.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -210,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EF438142AE2F5910025A508 /* OAuth2TokenStorage.swift in Sources */,
 				0EA53AAA2ADC6A09002612A7 /* WebViewViewController.swift in Sources */,
 				0E403CB92A79065E003D7CBF /* ImagesListViewController.swift in Sources */,
 				0E403CB52A79065E003D7CBF /* AppDelegate.swift in Sources */,
@@ -218,6 +225,7 @@
 				0EA53AAD2ADD92B3002612A7 /* ProfileViewController.swift in Sources */,
 				0E403CB72A79065E003D7CBF /* SceneDelegate.swift in Sources */,
 				0EC98AAA2A81477F000444AC /* UIColor+Extensions.swift in Sources */,
+				0EF438122AE2DAD50025A508 /* OAuth2Service.swift in Sources */,
 				0EA53AA82ADC6950002612A7 /* AuthViewController.swift in Sources */,
 				0E2F7F612ADC5ECD0099659C /* Constants.swift in Sources */,
 			);
