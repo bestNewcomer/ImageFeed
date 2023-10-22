@@ -6,14 +6,14 @@ protocol AuthViewControllerDelegate: AnyObject {
 
 final class AuthViewController: UIViewController {
     
-    private let ShowWebViewSegueId = "ShowWebView"
+    private let showWebViewSegueId = "showWebView"
     weak var delegate: AuthViewControllerDelegate?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if segue.identifier == ShowWebViewSegueId {
+        if segue.identifier == showWebViewSegueId {
             guard
                 let webViewViewController = segue.destination as? WebViewViewController
-            else { fatalError("Ошибка сигвея\(ShowWebViewSegueId)")}
+            else { fatalError("Ошибка сигвея\(showWebViewSegueId)")}
             webViewViewController.delegate = self
         } else {
             super.prepare(for: segue, sender: sender)

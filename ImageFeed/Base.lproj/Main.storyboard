@@ -243,7 +243,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="868-Wp-GY2" kind="presentation" identifier="ShowWebView" modalPresentationStyle="overFullScreen" id="Iwh-Bv-Xi4"/>
+                                    <segue destination="868-Wp-GY2" kind="presentation" identifier="showWebView" modalPresentationStyle="overFullScreen" id="Iwh-Bv-Xi4"/>
                                 </connections>
                             </button>
                         </subviews>

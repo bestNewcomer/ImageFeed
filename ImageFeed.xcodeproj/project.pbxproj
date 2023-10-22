@@ -23,6 +23,7 @@
 		0EF438142AE2F5910025A508 /* OAuth2TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF438132AE2F5910025A508 /* OAuth2TokenStorage.swift */; };
 		0EF438172AE329D70025A508 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF438162AE329D70025A508 /* SplashViewController.swift */; };
 		0EF4381B2AE32A480025A508 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4381A2AE32A480025A508 /* ProfileViewController.swift */; };
+		0EF4381D2AE574650025A508 /* TokenModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4381C2AE574650025A508 /* TokenModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		0EF438132AE2F5910025A508 /* OAuth2TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2TokenStorage.swift; sourceTree = "<group>"; };
 		0EF438162AE329D70025A508 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		0EF4381A2AE32A480025A508 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		0EF4381C2AE574650025A508 /* TokenModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				0EC98AA72A814211000444AC /* Resources */,
 				0EF7C9C22AD7439D00D993BE /* SingleImage */,
 				0EF438152AE329CA0025A508 /* SplashViewController */,
+				0EF4381C2AE574650025A508 /* TokenModels.swift */,
 			);
 			path = ImageFeed;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				0E403CB72A79065E003D7CBF /* SceneDelegate.swift in Sources */,
 				0EC98AAA2A81477F000444AC /* UIColor+Extensions.swift in Sources */,
 				0EF438122AE2DAD50025A508 /* OAuth2Service.swift in Sources */,
+				0EF4381D2AE574650025A508 /* TokenModels.swift in Sources */,
 				0EA53AA82ADC6950002612A7 /* AuthViewController.swift in Sources */,
 				0E2F7F612ADC5ECD0099659C /* Constants.swift in Sources */,
 			);

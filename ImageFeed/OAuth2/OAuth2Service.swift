@@ -9,7 +9,8 @@ final class OAuth2Service {
         }
         set {
             OAuth2TokenStorage().token = newValue
-        } }
+        }
+    }
     
 // Делаем POST-запрос
     func fetchOAuthToken(_ code: String, completion: @escaping (Result<String, Error>) -> Void ){
@@ -44,32 +45,19 @@ extension OAuth2Service {
     private func authTokenRequest(code: String) -> URLRequest {
         URLRequest.makeHTTPRequest(
             path: "/oauth/token"
-            + "?client_id=\(AccessKey)"
-            + "&&client_secret=\(SecretKey)"
-            + "&&redirect_uri=\(RedirectURI)"
+            + "?client_id=\(Constants.accessKey)"
+            + "&&client_secret=\(Constants.secretKey)"
+            + "&&redirect_uri=\(Constants.redirectURI)"
             + "&&code=\(code)"
             + "&&grant_type=authorization_code",
             httpMethod: "POST",
             baseURL: URL(string: "https://unsplash.com")!
         ) }
-    
-    private struct OAuthTokenResponseBody: Decodable {
-        let accessToken: String
-        let tokenType: String
-        let scope: String
-        let createdAt: Int
-        enum CodingKeys: String, CodingKey {
-            case accessToken = "access_token"
-            case tokenType = "token_type"
-            case scope
-            case createdAt = "created_at"
-        }
-    }
 }
 // MARK: - HTTP Request
 // Создаем вспомогательный метод для создания запросов
 extension URLRequest {
-    static func makeHTTPRequest(path: String,httpMethod: String,baseURL: URL = DefaultBaseURL) -> URLRequest {
+    static func makeHTTPRequest(path: String,httpMethod: String,baseURL: URL = Constants.defaultBaseURL) -> URLRequest {
         var request = URLRequest(url: URL(string: path, relativeTo: baseURL)!)
         request.httpMethod = httpMethod
         return request
