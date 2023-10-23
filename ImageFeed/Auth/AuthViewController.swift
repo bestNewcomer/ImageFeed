@@ -6,7 +6,7 @@ protocol AuthViewControllerDelegate: AnyObject {
 
 final class AuthViewController: UIViewController {
     
-    private let showWebViewSegueId = "showWebView"
+    private let showWebViewSegueId = "ShowWebView"
     weak var delegate: AuthViewControllerDelegate?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){

@@ -18,42 +18,39 @@ final class OAuth2Service {
     init(builder: URLRequestBuilder = .shared) {
         self.builder = builder
     }
-    
-    // Делаем POST-запрос
+    // Метод загружает Токен по запросу
     func fetchOAuthToken(_ code: String, completion: @escaping (Result<String, Error>) -> Void ){
         assert(Thread.isMainThread)
-        if lastCode == code { return }
+        guard code != lastCode, currentTask != nil else {
+            return
+        }
         
-        currentTask?.cancel()
         lastCode = code
+        guard let request = authTokenRequest(code: code) else {
+            assertionFailure("Не верный запрос")
+            completion(.failure(NetworkError.invalidRequest))
+            return
+        }
+        //        if lastCode == code { return }
+        //        currentTask?.cancel()
         
-        let request = authTokenRequest(code: code)
-        currentTask = object(for: request!) { [weak self] result in
+        currentTask = session.data(request: request) { [weak self] response in
             self?.currentTask = nil
-            switch result {
+            switch response {
             case .success(let body):
                 let authToken = body.accessToken
                 self?.authToken = authToken
                 completion(.success(authToken))
             case .failure(let error):
                 completion(.failure(error))
+                
             }
         }
-        currentTask?.resume()
     }
 }
 
 extension OAuth2Service {
-    
-    private func object(for request: URLRequest,completion: @escaping (Result<OAuthTokenResponseBody, Error>) -> Void) -> URLSessionTask {
-        let decoder = JSONDecoder()
-        return session.data(for: request) { (result: Result<Data, Error>) in
-            let response = result.flatMap { data -> Result<OAuthTokenResponseBody, Error> in
-                Result { try decoder.decode(OAuthTokenResponseBody.self, from: data) }
-            }
-            completion(response)
-        }
-    }
+    // Метод создает запрос в сеть
     private func authTokenRequest(code: String) -> URLRequest? {
         builder.makeHTTPRequest(
             path: "\(Constants.baseAuthTokenPath)"
@@ -67,3 +64,4 @@ extension OAuth2Service {
         )
     }
 }
+

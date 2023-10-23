@@ -7,28 +7,27 @@
 
 import Foundation
 
-// MARK: - Network Connection
-enum NetworkError: Error {
-    case httpStatusCode(Int)
-    case urlRequestError(Error)
-    case urlSessionError
-    case invalidRequest
-}
-
 extension URLSession {
-    func data(for request: URLRequest,completion: @escaping (Result<Data, Error>) -> Void) -> URLSessionTask {
-        let fulfillCompletion: (Result<Data, Error>) -> Void = { result in
+    // Метож создает запрос в сеть
+    func data(request: URLRequest,completion: @escaping (Result<OAuthTokenResponseBody, Error>) -> Void) -> URLSessionTask {
+        let fulfillCompletion: (Result<OAuthTokenResponseBody, Error>) -> Void = { result in
             DispatchQueue.main.async {
                 completion(result)
             }
         }
-        
-        let task = dataTask(with: request, completionHandler: { data, response, error in
+        let session = URLSession.shared
+        let task = session.dataTask(with: request, completionHandler: { data, response, error in
             if let data = data,
                let response = response,
                let statusCode = (response as? HTTPURLResponse)?.statusCode {
                 if 200 ..< 300 ~= statusCode {
-                    fulfillCompletion(.success(data))
+                    do {
+                        let decoder = JSONDecoder()
+                        let result = try decoder.decode(OAuthTokenResponseBody.self, from: data)
+                        fulfillCompletion(.success(result))
+                    } catch {
+                        fulfillCompletion(.failure(NetworkError.decodingError(error)))
+                    }
                 } else {
                     fulfillCompletion(.failure(NetworkError.httpStatusCode(statusCode)))
                 }
@@ -42,3 +41,4 @@ extension URLSession {
         return task
     }
 }
+

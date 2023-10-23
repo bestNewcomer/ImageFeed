@@ -244,7 +244,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="868-Wp-GY2" kind="presentation" identifier="showWebView" modalPresentationStyle="overFullScreen" id="Iwh-Bv-Xi4"/>
+                                    <segue destination="868-Wp-GY2" kind="presentation" identifier="ShowWebView" modalPresentationStyle="overFullScreen" id="Iwh-Bv-Xi4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -351,7 +351,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <segue destination="zAf-Sm-HEj" kind="presentation" identifier="showAuthentication" modalPresentationStyle="fullScreen" id="ByE-5P-OEF"/>
+                        <segue destination="zAf-Sm-HEj" kind="presentation" identifier="ShowAuthentication" modalPresentationStyle="fullScreen" id="ByE-5P-OEF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJG-C4-6Fx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

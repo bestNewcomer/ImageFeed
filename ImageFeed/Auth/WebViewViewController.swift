@@ -76,11 +76,6 @@ extension WebViewViewController: WKNavigationDelegate{
         }
     }
     
-    
-}
-
-extension WebViewViewController {
-    
     func code(from navigationAction: WKNavigationAction) -> String? {
         if
             let url = navigationAction.request.url,
