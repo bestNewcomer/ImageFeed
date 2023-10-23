@@ -9,8 +9,12 @@ import Foundation
 
 extension URLSession {
     // Метож создает запрос в сеть
-    func data(request: URLRequest,completion: @escaping (Result<OAuthTokenResponseBody, Error>) -> Void) -> URLSessionTask {
-        let fulfillCompletion: (Result<OAuthTokenResponseBody, Error>) -> Void = { result in
+    
+    func objectTask<T: Decodable>(
+        for request: URLRequest,
+        completion: @escaping (Result<T, Error>) -> Void
+    ) -> URLSessionTask {
+        let fulfillCompletion: (Result<T, Error>) -> Void = { result in
             DispatchQueue.main.async {
                 completion(result)
             }
@@ -23,7 +27,7 @@ extension URLSession {
                 if 200 ..< 300 ~= statusCode {
                     do {
                         let decoder = JSONDecoder()
-                        let result = try decoder.decode(OAuthTokenResponseBody.self, from: data)
+                        let result = try decoder.decode(T.self, from: data)
                         fulfillCompletion(.success(result))
                     } catch {
                         fulfillCompletion(.failure(NetworkError.decodingError(error)))

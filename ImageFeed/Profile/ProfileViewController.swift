@@ -2,6 +2,7 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
     
+    private let profileService = ProfileService.shared
     private var profileImageView: UIImageView = {
         let profileImage = UIImageView(image: UIImage(named: "profile"))
         profileImage.translatesAutoresizingMaskIntoConstraints = false
@@ -24,7 +25,7 @@ final class ProfileViewController: UIViewController {
         label.textColor = .gray
         return label
     }()
-    private var statusLabel: UILabel = {
+    private var descriptionLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Hello, world!"
@@ -46,7 +47,7 @@ final class ProfileViewController: UIViewController {
         view.addSubview(profileImageView)
         view.addSubview(nameLabel)
         view.addSubview(idLabel)
-        view.addSubview(statusLabel)
+        view.addSubview(descriptionLabel)
         view.addSubview(logoutButton)
     }
     
@@ -62,12 +63,19 @@ final class ProfileViewController: UIViewController {
             nameLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 8),
             idLabel.leadingAnchor.constraint(equalTo: profileImageView.leadingAnchor),
             idLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 8),
-            statusLabel.leadingAnchor.constraint(equalTo: profileImageView.leadingAnchor),
-            statusLabel.topAnchor.constraint(equalTo: idLabel.bottomAnchor, constant: 8),
+            descriptionLabel.leadingAnchor.constraint(equalTo: profileImageView.leadingAnchor),
+            descriptionLabel.topAnchor.constraint(equalTo: idLabel.bottomAnchor, constant: 8),
             logoutButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
             logoutButton.centerYAnchor.constraint(equalTo: profileImageView.centerYAnchor)
         ])
     }
+    
+    private func updateProfileDetails(profile: Profile) {
+        self.nameLabel.text = profile.name
+        self.idLabel.text = profile.loginName
+        self.descriptionLabel.text = profile.bio
+    }
+    
     @objc
     func tapLogoutButton() {
     }
@@ -79,5 +87,6 @@ final class ProfileViewController: UIViewController {
     
         addSubView()
         applyConstraints()
+        updateProfileDetails(profile: profileService.profile!)
     }
 }

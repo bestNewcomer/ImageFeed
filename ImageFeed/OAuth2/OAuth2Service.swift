@@ -2,22 +2,22 @@ import Foundation
 
 final class OAuth2Service {
     
-    private let session = URLSession.shared
+    private let urlSession: URLSession
+    private let storage: OAuth2TokenStorage
     private let builder: URLRequestBuilder
     private var currentTask: URLSessionTask?
     private var lastCode: String?
-    private (set) var authToken: String? {
-        get {
-            return OAuth2TokenStorage().token
-        }
-        set {
-            OAuth2TokenStorage().token = newValue
-        }
-    }
     
-    init(builder: URLRequestBuilder = .shared) {
+    init(
+        urlSession: URLSession = .shared,
+        storage: OAuth2TokenStorage = .shared,
+        builder: URLRequestBuilder = .shared
+    ) {
+        self.urlSession = urlSession
+        self.storage = storage
         self.builder = builder
     }
+    
     // Метод загружает Токен по запросу
     func fetchOAuthToken(_ code: String, completion: @escaping (Result<String, Error>) -> Void ){
         assert(Thread.isMainThread)
@@ -31,15 +31,14 @@ final class OAuth2Service {
             completion(.failure(NetworkError.invalidRequest))
             return
         }
-        //        if lastCode == code { return }
-        //        currentTask?.cancel()
         
-        currentTask = session.data(request: request) { [weak self] response in
+        let session = URLSession.shared
+        currentTask = session.objectTask(for: request) { [weak self] (response: Result<OAuthTokenResponseBody, Error>) in
             self?.currentTask = nil
             switch response {
             case .success(let body):
                 let authToken = body.accessToken
-                self?.authToken = authToken
+                self?.storage.token = authToken
                 completion(.success(authToken))
             case .failure(let error):
                 completion(.failure(error))
