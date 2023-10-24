@@ -32,8 +32,7 @@ final class OAuth2Service {
             return
         }
         
-        let session = URLSession.shared
-        currentTask = session.objectTask(for: request) { [weak self] (response: Result<OAuthTokenResponseBody, Error>) in
+        let currentTask = urlSession.objectTask(for: request) { [weak self] (response: Result<OAuthTokenResponseBody, Error>) in
             self?.currentTask = nil
             switch response {
             case .success(let body):
@@ -45,6 +44,8 @@ final class OAuth2Service {
                 
             }
         }
+        self.currentTask = currentTask
+        currentTask.resume()
     }
 }
 
@@ -56,7 +57,7 @@ extension OAuth2Service {
             + "?client_id=\(Constants.accessKey)"
             + "&&client_secret=\(Constants.secretKey)"
             + "&&redirect_uri=\(Constants.redirectURI)"
-            + "&&code=\(code)"
+            + "&&code=\(Constants.code)"
             + "&&grant_type=authorization_code",
             httpMethod: "POST",
             baseURL: Constants.baseURL

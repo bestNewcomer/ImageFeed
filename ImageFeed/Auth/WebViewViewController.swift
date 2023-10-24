@@ -7,7 +7,7 @@ protocol WebViewViewControllerDelegate: AnyObject {
 }
 
 final class WebViewViewController: UIViewController {
-    
+    private var estimatedProgressObservation: NSKeyValueObservation?
     var delegate: WebViewViewControllerDelegate?
     @IBOutlet private var webView: WKWebView!
     @IBOutlet private var progressView: UIProgressView!
@@ -20,18 +20,8 @@ final class WebViewViewController: UIViewController {
         super.viewDidLoad()
         
         webView.navigationDelegate = self
-        var urlComponents = URLComponents(string: Constants.unsplashAuthorizeURLString)!
-        urlComponents.queryItems = [
-            URLQueryItem(name: "client_id", value: Constants.accessKey),
-            URLQueryItem(name: "redirect_uri", value: Constants.redirectURI),
-            URLQueryItem(name: "response_type", value: "code"),
-            URLQueryItem(name: "scope", value: Constants.accessScope)
-        ]
-        let url = urlComponents.url!
-        let request = URLRequest(url: url)
-        webView.load(request)
         
-        updateProgress()
+        loadWebView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -54,7 +44,7 @@ final class WebViewViewController: UIViewController {
             super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
         }
     }
-
+    
     private func updateProgress() {
         progressView.progress = Float(webView.estimatedProgress)
         progressView.isHidden = fabs(webView.estimatedProgress - 1.0) <= 0.0001
@@ -75,14 +65,29 @@ extension WebViewViewController: WKNavigationDelegate{
             decisionHandler(.allow)
         }
     }
-    
+}
+
+private extension WebViewViewController {
+    func loadWebView() {
+        var urlComponents = URLComponents(string: Constants.unsplashAuthorizeURL)
+        urlComponents?.queryItems = [
+            URLQueryItem(name: WebKeys.clientID, value: Constants.accessKey),
+            URLQueryItem(name: WebKeys.redirectURI, value: Constants.redirectURI),
+            URLQueryItem(name: WebKeys.responseType, value: Constants.code),
+            URLQueryItem(name: WebKeys.scope, value: Constants.accessScope)
+        ]
+        if let url = urlComponents?.url {
+            let request = URLRequest(url: url)
+            webView.load(request)
+        }
+    }
     func code(from navigationAction: WKNavigationAction) -> String? {
         if
             let url = navigationAction.request.url,
             let urlComponents = URLComponents(string: url.absoluteString),
-            urlComponents.path == "/oauth/authorize/native",
+            urlComponents.path == Constants.authorizedPath,
             let items = urlComponents.queryItems,
-            let codeItem = items.first(where: { $0.name == "code" })
+            let codeItem = items.first(where: { $0.name == Constants.code })
         {
             return codeItem.value
         } else {

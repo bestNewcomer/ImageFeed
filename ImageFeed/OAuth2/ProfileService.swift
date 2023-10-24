@@ -3,26 +3,30 @@ import UIKit
 final class ProfileService {
     
     static let shared = ProfileService()
-    private let session = URLSession.shared
+    private let urlSession: URLSession
     private let builder: URLRequestBuilder
     
     private(set) var profile: Profile?
     private var currentTask: URLSessionTask?
     
-    init(builder: URLRequestBuilder = .shared) {
-        self.builder = builder
+    init(
+        urlSession: URLSession = .shared,
+        builder: URLRequestBuilder = .shared) {
+            self.urlSession = urlSession
+            self.builder = builder
     }
     
-    func fetchProfile(_ token: String, completion: @escaping (Result<Profile, Error>) -> Void) {
+    func fetchProfile(completion: @escaping (Result<Profile, Error>) -> Void) {
+        assert(Thread.isMainThread)
         currentTask?.cancel()
         
-        guard let request = makeFetchProfileRequest(token: token) else {
+        guard let request = makeFetchProfileRequest() else {
             assertionFailure("Не верный запрос")
             completion(.failure(NetworkError.invalidRequest))
             return
         }
-        let session = URLSession.shared
-        currentTask = session.objectTask(for: request) { [weak self] (response: Result<ProfileResult, Error>) in
+        
+        let currentTask = urlSession.objectTask(for: request) { [weak self] (response: Result<ProfileResult, Error>) in
             self?.currentTask = nil
             switch response {
             case .success(let profileResult):
@@ -32,9 +36,11 @@ final class ProfileService {
                 completion(.failure(error))
             }
         }
+        self.currentTask = currentTask
+        currentTask.resume()
     }
     
-    private func makeFetchProfileRequest(token: String) -> URLRequest? {
+    private func makeFetchProfileRequest() -> URLRequest? {
         builder.makeHTTPRequest(
             path: "/me",
             httpMethod: "GET",
