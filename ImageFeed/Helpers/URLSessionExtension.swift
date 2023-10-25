@@ -1,12 +1,18 @@
 import Foundation
 
+// MARK: - Network Connection
+enum NetworkError: Error {
+    case decodingError(Error)
+    case httpStatusCode(Int)
+    case urlRequestError(Error)
+    case urlSessionError
+    case invalidRequest
+}
+
 extension URLSession {
     // Метож создает запрос в сеть
     
-    func objectTask<T: Decodable>(
-        for request: URLRequest,
-        completion: @escaping (Result<T, Error>) -> Void
-    ) -> URLSessionTask {
+    func objectTask<T: Decodable>(for request: URLRequest,completion: @escaping (Result<T, Error>) -> Void) -> URLSessionTask {
         let fulfillCompletion: (Result<T, Error>) -> Void = { result in
             DispatchQueue.main.async {
                 completion(result)
@@ -20,12 +26,14 @@ extension URLSession {
                 if 200 ..< 300 ~= statusCode {
                     do {
                         let decoder = JSONDecoder()
+                        decoder.keyDecodingStrategy = .convertFromSnakeCase
                         let result = try decoder.decode(T.self, from: data)
                         fulfillCompletion(.success(result))
                     } catch {
                         fulfillCompletion(.failure(NetworkError.decodingError(error)))
                     }
                 } else {
+                    print(String(data: data, encoding: .utf8)!) 
                     fulfillCompletion(.failure(NetworkError.httpStatusCode(statusCode)))
                 }
             } else if let error = error {

@@ -2,32 +2,32 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
     
+    //MARK:  - Private Properties
     private let profileService = ProfileService.shared
+    
     private var profileImageView: UIImageView = {
         let profileImage = UIImageView(image: UIImage(named: "profile"))
-        profileImage.translatesAutoresizingMaskIntoConstraints = false
         return profileImage
     }()
     
     private var nameLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Екатерина Новикова"
         label.font = UIFont.systemFont(ofSize: 23, weight: .bold)
         label.textColor = .white
         return label
     }()
+    
     private var idLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "@ekaterina_nov"
         label.font = UIFont(name: "System", size: 13)
         label.textColor = .gray
         return label
     }()
+    
     private var descriptionLabel: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Hello, world!"
         label.font = UIFont(name: "System", size: 13)
         label.textColor = .white
@@ -36,13 +36,31 @@ final class ProfileViewController: UIViewController {
     
     private var logoutButton: UIButton = {
         let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(UIImage(named: "exitButton"), for: .normal)
         button.addTarget(ProfileViewController.self, action: #selector(tapLogoutButton), for: .touchUpInside)
         return button
     }()
     
+    @objc
+    private func tapLogoutButton() {
+    }
     
+    //MARK:  - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    
+        addSubView()
+        applyConstraints()
+        updateProfileDetails()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        //updateProfileDetails()
+    }
+    
+    //MARK:  - Private Methods
     private func addSubView(){
         view.addSubview(profileImageView)
         view.addSubview(nameLabel)
@@ -52,6 +70,12 @@ final class ProfileViewController: UIViewController {
     }
     
     private func applyConstraints(){
+        profileImageView.translatesAutoresizingMaskIntoConstraints = false
+        nameLabel.translatesAutoresizingMaskIntoConstraints = false
+        idLabel.translatesAutoresizingMaskIntoConstraints = false
+        descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
+        logoutButton.translatesAutoresizingMaskIntoConstraints = false
+        
         NSLayoutConstraint.activate([
             profileImageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
             profileImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 76),
@@ -70,23 +94,14 @@ final class ProfileViewController: UIViewController {
         ])
     }
     
-    private func updateProfileDetails(profile: Profile) {
+    private func updateProfileDetails() {
+        guard let profile = profileService.profile
+        else { assertionFailure("Нет сохраненного профиля")
+            return }
         self.nameLabel.text = profile.name
         self.idLabel.text = profile.loginName
         self.descriptionLabel.text = profile.bio
     }
     
-    @objc
-    func tapLogoutButton() {
-    }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.backgroundColor = .ypBlack
-    
-        addSubView()
-        applyConstraints()
-        updateProfileDetails(profile: profileService.profile!)
-    }
 }

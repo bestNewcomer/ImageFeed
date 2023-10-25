@@ -1,30 +1,29 @@
 import Foundation
 
 final class OAuth2Service {
+    static let shared = OAuth2Service()
     
-    private let urlSession: URLSession
-    private let storage: OAuth2TokenStorage
-    private let builder: URLRequestBuilder
+    private let urlSession = URLSession.shared
+    private let storage = OAuth2TokenStorage.shared
+    private let builder = URLRequestBuilder.shared
     private var currentTask: URLSessionTask?
     private var lastCode: String?
     
-    init(
-        urlSession: URLSession = .shared,
-        storage: OAuth2TokenStorage = .shared,
-        builder: URLRequestBuilder = .shared
-    ) {
-        self.urlSession = urlSession
-        self.storage = storage
-        self.builder = builder
+   private init() {}
+    
+    
+    var isAuthenticated: Bool {
+        storage.token != nil
     }
+    
     
     // Метод загружает Токен по запросу
     func fetchOAuthToken(_ code: String, completion: @escaping (Result<String, Error>) -> Void ){
-        assert(Thread.isMainThread)
-        guard code != lastCode, currentTask != nil else {
-            return
-        }
-        
+//        guard !(code == lastCode && currentTask != nil) else {
+//            return
+//        }
+        if code == lastCode { return }
+        currentTask?.cancel()
         lastCode = code
         guard let request = authTokenRequest(code: code) else {
             assertionFailure("Не верный запрос")
@@ -40,8 +39,8 @@ final class OAuth2Service {
                 self?.storage.token = authToken
                 completion(.success(authToken))
             case .failure(let error):
+                self?.lastCode = nil
                 completion(.failure(error))
-                
             }
         }
         self.currentTask = currentTask
@@ -57,10 +56,11 @@ extension OAuth2Service {
             + "?client_id=\(Constants.accessKey)"
             + "&&client_secret=\(Constants.secretKey)"
             + "&&redirect_uri=\(Constants.redirectURI)"
-            + "&&code=\(Constants.code)"
+            + "&&code=\(code)"
+            //+ "&&code=\(Constants.code)"
             + "&&grant_type=authorization_code",
             httpMethod: "POST",
-            baseURL: Constants.baseURL
+            baseURLString: Constants.baseURLString
         )
     }
 }

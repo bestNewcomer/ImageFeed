@@ -3,18 +3,13 @@ import UIKit
 final class ProfileService {
     
     static let shared = ProfileService()
-    private let urlSession: URLSession
-    private let builder: URLRequestBuilder
-    
+    //MARK:  - Private Properties
+    private let urlSession = URLSession.shared
+    private let builder = URLRequestBuilder.shared
     private(set) var profile: Profile?
     private var currentTask: URLSessionTask?
     
-    init(
-        urlSession: URLSession = .shared,
-        builder: URLRequestBuilder = .shared) {
-            self.urlSession = urlSession
-            self.builder = builder
-    }
+    private init() {}
     
     func fetchProfile(completion: @escaping (Result<Profile, Error>) -> Void) {
         assert(Thread.isMainThread)
@@ -31,6 +26,7 @@ final class ProfileService {
             switch response {
             case .success(let profileResult):
                 let profile = Profile(result: profileResult)
+                self?.profile = profile
                 completion(.success(profile))
             case .failure(let error):
                 completion(.failure(error))
@@ -39,14 +35,16 @@ final class ProfileService {
         self.currentTask = currentTask
         currentTask.resume()
     }
-    
+}
+extension ProfileService {
     private func makeFetchProfileRequest() -> URLRequest? {
         builder.makeHTTPRequest(
             path: "/me",
             httpMethod: "GET",
-            baseURL: Constants.baseURL
+            baseURLString: Constants.defaultBaseURL
         )
         
     }
-    
 }
+
+
