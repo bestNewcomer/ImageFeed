@@ -3,6 +3,7 @@ import UIKit
 final class SplashViewController: UIViewController {
     
     //MARK:  - Private Properties
+    private let profileImageService = ProfileImageService.shared
     private let profileService = ProfileService.shared
     private let oauth2Service = OAuth2Service.shared
     private let oauth2TokenStorage = OAuth2TokenStorage.shared
@@ -12,6 +13,7 @@ final class SplashViewController: UIViewController {
     //MARK:  - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         alertPresenter.delegate = self
     }
     
@@ -48,18 +50,20 @@ final class SplashViewController: UIViewController {
             .instantiateViewController(withIdentifier: "TabBarViewController")
         window.rootViewController = tabBarController
     }
-}
-
-extension SplashViewController {
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == showAuthenticationScreenSegueIdentifier {
-            guard let navigationController = segue.destination as? UINavigationController,
-                  let viewController = navigationController.viewControllers[0] as? AuthViewController
-            else { fatalError("Неудалось подготовиться к \(showAuthenticationScreenSegueIdentifier)") }
-            viewController.delegate = self
-        } else {
-            super.prepare(for: segue, sender: sender)
+    private func presentAuth() {
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let viewController = storyboard.instantiateViewController(identifier: "AuthViewControllerID")
+        guard let authViewController = viewController as? AuthViewController else { return }
+        authViewController.delegate = self
+        authViewController.modalPresentationStyle = .fullScreen
+        present(authViewController, animated:  true)
+    }
+    
+    private func showLoginAlert(error: Error) {
+        alertPresenter.showAlert(title: "Что-то пошло не так :(",
+                                 message: "Не удалось войти в ситему,\(error.localizedDescription)") {
+            self.performSegue(withIdentifier: self.showAuthenticationScreenSegueIdentifier, sender: nil)
         }
     }
 }
@@ -94,6 +98,8 @@ extension SplashViewController: AuthViewControllerDelegate {
         profileService.fetchProfile() { [weak self] profileResult in
             switch profileResult {
             case .success(_):
+                guard let username = self?.profileService.profile?.username else { return }
+                self?.profileImageService.fetchProfileImageURL(username: username) { _ in }
                 self?.switchToTabBarController()
             case .failure(let error):
                 self?.showLoginAlert(error: error)
@@ -101,20 +107,15 @@ extension SplashViewController: AuthViewControllerDelegate {
             completion()
         }
     }
-    
-    private func showLoginAlert(error: Error) {
-        alertPresenter.showAlert(title: "Что-то пошло не так :(",
-                                 message: "Не удалось войти в ситему,\(error.localizedDescription)") {
-            self.performSegue(withIdentifier: self.showAuthenticationScreenSegueIdentifier, sender: nil)
-        }
-    }
-    
-    private func presentAuth() {
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
-        let viewController = storyboard.instantiateViewController(identifier: "AuthViewControllerID")
-        guard let authViewController = viewController as? AuthViewController else { return }
-        authViewController.delegate = self
-        authViewController.modalPresentationStyle = .fullScreen
-        present(authViewController, animated:  true)
-    }
 }
+
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == showAuthenticationScreenSegueIdentifier {
+//            guard let navigationController = segue.destination as? UINavigationController,
+//                  let viewController = navigationController.viewControllers[0] as? AuthViewController
+//            else { fatalError("Неудалось подготовиться к \(showAuthenticationScreenSegueIdentifier)") }
+//            viewController.delegate = self
+//        } else {
+//            super.prepare(for: segue, sender: sender)
+//        }
+//    }

@@ -7,36 +7,42 @@ protocol WebViewViewControllerDelegate: AnyObject {
 }
 
 final class WebViewViewController: UIViewController {
-    private var estimatedProgressObservation: NSKeyValueObservation?
-    var delegate: WebViewViewControllerDelegate?
+    
+    //MARK:  - IB Outlets
     @IBOutlet private var webView: WKWebView!
     @IBOutlet private var progressView: UIProgressView!
     
-    @IBAction private func didTapBackButton(_ sender: Any) {
-        delegate?.webViewViewControllerDidCancel(self)
-    }
+    //MARK:  - Public Properties
+    var delegate: WebViewViewControllerDelegate?
     
+    //MARK:  - Private Properties
+    private var estimatedProgressObservation: NSKeyValueObservation?
+    
+    //MARK:  - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         webView.navigationDelegate = self
-        
         loadWebView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        webView.addObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), options: .new, context: nil)
+        estimatedProgressObservation = webView.observe(\.estimatedProgress, options: [], changeHandler: { [weak self] _, _ in
+            guard let self = self else { return }
+            self.updateProgress()
+        })
         updateProgress()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        webView.removeObserver(self, forKeyPath: #keyPath(WKWebView.estimatedProgress), context: nil)
+    //MARK:  - IB Actions
+    @IBAction private func didTapBackButton(_ sender: Any) {
+        delegate?.webViewViewControllerDidCancel(self)
     }
     
+    //MARK:  - Overrides Methods
+
     override func observeValue(forKeyPath keyPath: String?,of object: Any?,change: [NSKeyValueChangeKey : Any]?,context: UnsafeMutableRawPointer?) {
         if keyPath == #keyPath(WKWebView.estimatedProgress) {
             updateProgress()
@@ -45,12 +51,14 @@ final class WebViewViewController: UIViewController {
         }
     }
     
+    //MARK:  - Private Methods
     private func updateProgress() {
         progressView.progress = Float(webView.estimatedProgress)
         progressView.isHidden = fabs(webView.estimatedProgress - 1.0) <= 0.0001
     }
 }
 
+// MARK: - WKNavigationDelegate
 extension WebViewViewController: WKNavigationDelegate{
     
     func webView(
@@ -67,7 +75,9 @@ extension WebViewViewController: WKNavigationDelegate{
     }
 }
 
+// MARK: - extension WebViewViewController
 private extension WebViewViewController {
+    
     func loadWebView() {
         var urlComponents = URLComponents(string: Constants.unsplashAuthorizeURL)
         urlComponents?.queryItems = [
@@ -81,6 +91,7 @@ private extension WebViewViewController {
             webView.load(request)
         }
     }
+    
     func code(from navigationAction: WKNavigationAction) -> String? {
         if
             let url = navigationAction.request.url,

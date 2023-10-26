@@ -10,7 +10,6 @@ enum NetworkError: Error {
 }
 
 extension URLSession {
-    // Метож создает запрос в сеть
     
     func objectTask<T: Decodable>(for request: URLRequest,completion: @escaping (Result<T, Error>) -> Void) -> URLSessionTask {
         let fulfillCompletion: (Result<T, Error>) -> Void = { result in

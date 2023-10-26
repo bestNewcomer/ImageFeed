@@ -1,11 +1,14 @@
 import UIKit
+import Kingfisher
 
 final class ProfileViewController: UIViewController {
     
     //MARK:  - Private Properties
     private let profileService = ProfileService.shared
+    private let profileImageService = ProfileImageService.shared
+    private var profileImageServiceObserver: NSObjectProtocol?
     
-    private var profileImageView: UIImageView = {
+    private var profileImage: UIImageView = {
         let profileImage = UIImageView(image: UIImage(named: "profile"))
         return profileImage
     }()
@@ -41,28 +44,19 @@ final class ProfileViewController: UIViewController {
         return button
     }()
     
-    @objc
-    private func tapLogoutButton() {
-    }
-    
     //MARK:  - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         addSubView()
         applyConstraints()
         updateProfileDetails()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        //updateProfileDetails()
+        profileImageObsserver()
     }
     
     //MARK:  - Private Methods
     private func addSubView(){
-        view.addSubview(profileImageView)
+        view.addSubview(profileImage)
         view.addSubview(nameLabel)
         view.addSubview(idLabel)
         view.addSubview(descriptionLabel)
@@ -70,28 +64,49 @@ final class ProfileViewController: UIViewController {
     }
     
     private func applyConstraints(){
-        profileImageView.translatesAutoresizingMaskIntoConstraints = false
+        profileImage.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         idLabel.translatesAutoresizingMaskIntoConstraints = false
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         logoutButton.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            profileImageView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
-            profileImageView.topAnchor.constraint(equalTo: view.topAnchor, constant: 76),
-            profileImageView.widthAnchor.constraint(equalToConstant: 70),
-            profileImageView.heightAnchor.constraint(equalToConstant: 70),
-            nameLabel.leadingAnchor.constraint(equalTo: profileImageView.leadingAnchor),
-            nameLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 8),
-            nameLabel.leadingAnchor.constraint(equalTo: profileImageView.leadingAnchor),
-            nameLabel.topAnchor.constraint(equalTo: profileImageView.bottomAnchor, constant: 8),
-            idLabel.leadingAnchor.constraint(equalTo: profileImageView.leadingAnchor),
+            profileImage.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
+            profileImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 76),
+            profileImage.widthAnchor.constraint(equalToConstant: 70),
+            profileImage.heightAnchor.constraint(equalToConstant: 70),
+            nameLabel.leadingAnchor.constraint(equalTo: profileImage.leadingAnchor),
+            nameLabel.topAnchor.constraint(equalTo: profileImage.bottomAnchor, constant: 8),
+            nameLabel.leadingAnchor.constraint(equalTo: profileImage.leadingAnchor),
+            nameLabel.topAnchor.constraint(equalTo: profileImage.bottomAnchor, constant: 8),
+            idLabel.leadingAnchor.constraint(equalTo: profileImage.leadingAnchor),
             idLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 8),
-            descriptionLabel.leadingAnchor.constraint(equalTo: profileImageView.leadingAnchor),
+            descriptionLabel.leadingAnchor.constraint(equalTo: profileImage.leadingAnchor),
             descriptionLabel.topAnchor.constraint(equalTo: idLabel.bottomAnchor, constant: 8),
             logoutButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
-            logoutButton.centerYAnchor.constraint(equalTo: profileImageView.centerYAnchor)
+            logoutButton.centerYAnchor.constraint(equalTo: profileImage.centerYAnchor)
         ])
+    }
+    
+    @objc
+    private func tapLogoutButton() {
+    }
+    
+    private func updateAvatar(notification: Notification) {
+        guard
+            isViewLoaded,
+            let userInfo = notification.userInfo,
+            let profileImageURL = userInfo["URL"] as? String,
+            let url = URL(string: profileImageURL)
+        else { return }
+        
+        updateAvatar(url: url)
+    }
+    
+    private func updateAvatar(url: URL) {
+        profileImage.kf.indicatorType = .activity
+        let processor = RoundCornerImageProcessor(cornerRadius: 61)
+        profileImage.kf.setImage(with: url, options: [.processor(processor)])
     }
     
     private func updateProfileDetails() {
@@ -101,7 +116,18 @@ final class ProfileViewController: UIViewController {
         self.nameLabel.text = profile.name
         self.idLabel.text = profile.loginName
         self.descriptionLabel.text = profile.bio
+        
+        
     }
-    
-    
+}
+
+private extension ProfileViewController {
+    func profileImageObsserver() {
+        if let url = profileImageService.avatarURL {
+            updateAvatar(url: url)
+        }
+        profileImageServiceObserver = NotificationCenter.default.addObserver(forName: ProfileImageService.didChangeNotification, object: nil, queue: .main){
+            [weak self] notification in self?.updateAvatar(notification: notification)
+        }
+    }
 }

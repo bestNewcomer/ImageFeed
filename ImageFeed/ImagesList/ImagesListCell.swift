@@ -2,14 +2,16 @@
 import UIKit
 
 final class ImagesListCell: UITableViewCell {
-    static let reuseIdentifier = "ImagesListCell"
+    
+    //MARK:  - IB Outlets
     @IBOutlet private weak var imageCell: UIImageView!
     @IBOutlet private weak var likeButton: UIButton!
     @IBOutlet weak var dataLabel: UILabel!
     
-}
-
-extension ImagesListCell {
+    //MARK:  - Public Properties
+    static let reuseIdentifier = "ImagesListCell"
+    
+    //MARK:  - Overrides Methods
     func config(image: UIImage?, date: String, like: Bool) {
         imageCell.image = image
         dataLabel.text = date

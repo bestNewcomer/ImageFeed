@@ -2,15 +2,19 @@ import UIKit
 
 final class ProfileService {
     
+    //MARK:  - Public Properties
     static let shared = ProfileService()
+    
     //MARK:  - Private Properties
     private let urlSession = URLSession.shared
     private let builder = URLRequestBuilder.shared
     private(set) var profile: Profile?
     private var currentTask: URLSessionTask?
     
+    //MARK:  - Initializers
     private init() {}
     
+    //MARK:  - Public Methods
     func fetchProfile(completion: @escaping (Result<Profile, Error>) -> Void) {
         assert(Thread.isMainThread)
         currentTask?.cancel()
@@ -36,6 +40,8 @@ final class ProfileService {
         currentTask.resume()
     }
 }
+
+// MARK: - extension ProfileService
 extension ProfileService {
     private func makeFetchProfileRequest() -> URLRequest? {
         builder.makeHTTPRequest(

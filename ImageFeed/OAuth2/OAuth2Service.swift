@@ -1,29 +1,29 @@
 import Foundation
 
 final class OAuth2Service {
-    static let shared = OAuth2Service()
     
+    //MARK:  - Public Properties
+    static let shared = OAuth2Service()
+    var isAuthenticated: Bool {
+        storage.token != nil
+    }
+    
+    //MARK:  - Private Properties
     private let urlSession = URLSession.shared
     private let storage = OAuth2TokenStorage.shared
     private let builder = URLRequestBuilder.shared
     private var currentTask: URLSessionTask?
     private var lastCode: String?
     
-   private init() {}
+    //MARK:  - Initializers
+    private init() {}
     
-    
-    var isAuthenticated: Bool {
-        storage.token != nil
-    }
-    
-    
-    // Метод загружает Токен по запросу
+    //MARK:  - Public Methods
     func fetchOAuthToken(_ code: String, completion: @escaping (Result<String, Error>) -> Void ){
-//        guard !(code == lastCode && currentTask != nil) else {
-//            return
-//        }
-        if code == lastCode { return }
-        currentTask?.cancel()
+        guard !(code == lastCode && currentTask != nil) else {
+            return
+        }
+        
         lastCode = code
         guard let request = authTokenRequest(code: code) else {
             assertionFailure("Не верный запрос")
@@ -48,8 +48,8 @@ final class OAuth2Service {
     }
 }
 
+// MARK: - extension OAuth2Service
 extension OAuth2Service {
-    // Метод создает запрос в сеть
     private func authTokenRequest(code: String) -> URLRequest? {
         builder.makeHTTPRequest(
             path: "\(Constants.baseAuthTokenPath)"
