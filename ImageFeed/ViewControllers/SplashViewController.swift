@@ -9,7 +9,12 @@ final class SplashViewController: UIViewController {
     private let oauth2TokenStorage = OAuth2TokenStorage.shared
     private let alertPresenter = AlertPresenter()
     private let showAuthenticationScreenSegueIdentifier = "ShowAuthentication"
-    
+    private var splashImage: UIImageView = {
+        let splashImage = UIImageView(image: UIImage(named: "Vector"))
+        splashImage.backgroundColor = .clear
+        splashImage.contentMode = .scaleAspectFit
+        return splashImage
+    }()
     //MARK:  - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,13 +114,3 @@ extension SplashViewController: AuthViewControllerDelegate {
     }
 }
 
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == showAuthenticationScreenSegueIdentifier {
-//            guard let navigationController = segue.destination as? UINavigationController,
-//                  let viewController = navigationController.viewControllers[0] as? AuthViewController
-//            else { fatalError("Неудалось подготовиться к \(showAuthenticationScreenSegueIdentifier)") }
-//            viewController.delegate = self
-//        } else {
-//            super.prepare(for: segue, sender: sender)
-//        }
-//    }

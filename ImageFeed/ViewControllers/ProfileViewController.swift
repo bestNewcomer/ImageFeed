@@ -9,7 +9,10 @@ final class ProfileViewController: UIViewController {
     private var profileImageServiceObserver: NSObjectProtocol?
     
     private var profileImage: UIImageView = {
-        let profileImage = UIImageView(image: UIImage(named: "profile"))
+        let profileImage = UIImageView(image: UIImage(named: "Avatar"))
+        profileImage.backgroundColor = .clear
+        profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
+        profileImage.clipsToBounds = true
         return profileImage
     }()
     
@@ -54,6 +57,12 @@ final class ProfileViewController: UIViewController {
         profileImageObsserver()
     }
     
+//    override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        
+//        profileImageObsserver()
+//    }
+    
     //MARK:  - Private Methods
     private func addSubView(){
         view.addSubview(profileImage)
@@ -94,7 +103,6 @@ final class ProfileViewController: UIViewController {
     
     private func updateAvatar(notification: Notification) {
         guard
-            isViewLoaded,
             let userInfo = notification.userInfo,
             let profileImageURL = userInfo["URL"] as? String,
             let url = URL(string: profileImageURL)
@@ -104,9 +112,13 @@ final class ProfileViewController: UIViewController {
     }
     
     private func updateAvatar(url: URL) {
+        let processor = RoundCornerImageProcessor(cornerRadius: 70, backgroundColor: .clear)
         profileImage.kf.indicatorType = .activity
-        let processor = RoundCornerImageProcessor(cornerRadius: 61)
-        profileImage.kf.setImage(with: url, options: [.processor(processor)])
+        profileImage.kf.setImage(with: url, placeholder: UIImage(named: "avatar_placeholder"), options: [.processor(processor)])
+        
+        let cache = ImageCache.default
+        cache.clearMemoryCache()
+        cache.clearDiskCache()
     }
     
     private func updateProfileDetails() {
@@ -116,8 +128,6 @@ final class ProfileViewController: UIViewController {
         self.nameLabel.text = profile.name
         self.idLabel.text = profile.loginName
         self.descriptionLabel.text = profile.bio
-        
-        
     }
 }
 

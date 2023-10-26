@@ -3,7 +3,7 @@ import UIKit
 enum Constants {
     // MARK: основные API адреса Usplash
     
-    static let defaultBaseURL: String =  "https://api.unsplash.com"
+    static let defaultBaseURL: String = "https://api.unsplash.com"
     static let baseURLString = "https://unsplash.com"
     static let unsplashAuthorizeURL = "https://unsplash.com/oauth/authorize"
     static let baseAuthTokenPath = "/oauth/token"
