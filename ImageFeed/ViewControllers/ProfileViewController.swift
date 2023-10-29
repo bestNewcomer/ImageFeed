@@ -11,7 +11,7 @@ final class ProfileViewController: UIViewController {
     private var profileImage: UIImageView = {
         let profileImage = UIImageView(image: UIImage(named: "Avatar"))
         profileImage.backgroundColor = .clear
-        profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
+//        profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
         profileImage.clipsToBounds = true
         return profileImage
     }()

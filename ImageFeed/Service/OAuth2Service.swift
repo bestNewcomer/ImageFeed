@@ -20,9 +20,7 @@ final class OAuth2Service {
     
     //MARK:  - Public Methods
     func fetchOAuthToken(_ code: String, completion: @escaping (Result<String, Error>) -> Void ){
-        guard !(code == lastCode && currentTask != nil) else {
-            return
-        }
+        if lastCode == code || currentTask != nil { return }
         
         lastCode = code
         guard let request = authTokenRequest(code: code) else {
