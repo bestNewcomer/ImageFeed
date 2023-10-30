@@ -10,8 +10,7 @@ final class ProfileViewController: UIViewController {
     
     private var profileImage: UIImageView = {
         let profileImage = UIImageView(image: UIImage(named: "Avatar"))
-        profileImage.backgroundColor = .clear
-//        profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
+        profileImage.layer.cornerRadius = 35
         profileImage.clipsToBounds = true
         return profileImage
     }()
@@ -112,9 +111,9 @@ final class ProfileViewController: UIViewController {
     }
     
     private func updateAvatar(url: URL) {
-        let processor = RoundCornerImageProcessor(cornerRadius: 70, backgroundColor: .clear)
+//        let processor = RoundCornerImageProcessor(cornerRadius: 70, backgroundColor: .clear)
         profileImage.kf.indicatorType = .activity
-        profileImage.kf.setImage(with: url, placeholder: UIImage(named: "avatar_placeholder"), options: [.processor(processor)])
+        profileImage.kf.setImage(with: url, placeholder: UIImage(named: "avatar_placeholder"))
         
         let cache = ImageCache.default
         cache.clearMemoryCache()

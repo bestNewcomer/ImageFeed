@@ -14,21 +14,21 @@ final class SingleImageViewController:UIViewController {
     @IBOutlet private var imageView: UIImageView!
     
     //MARK:  - Public Properties
-    var image: UIImage! {
-        didSet {
-            guard isViewLoaded else {return}
-            imageView.image = image
-            rescaleAndCenterImageInScrollView(image: image)
-        }
-    }
+    var image: URL?
+//    var image: UIImage! {
+//        didSet {
+//            guard isViewLoaded else {return}
+//            imageView.image = image
+//            rescaleAndCenterImageInScrollView(image: image)
+//        }
+//    }
     
     //MARK:  - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.minimumZoomScale = 0.1
-        scrollView.maximumZoomScale = 1.25
-        imageView.image = image
-        rescaleAndCenterImageInScrollView(image: image)
+        
+        scrollView.delegate = self
+        showSingleImage()
     }
     
     //MARK:  - IB Actions
@@ -44,6 +44,25 @@ final class SingleImageViewController:UIViewController {
     }
     
     //MARK:  - Private Methods
+    
+    private func showSingleImage() {
+        guard let imageURL = image else { return }
+        UIBlockingProgressHUD.show()
+        imageView.kf.setImage(with: imageURL) { [ weak self ] result in
+            UIBlockingProgressHUD.dismiss()
+            guard let self = self else { return }
+            switch result {
+            case .success(let fullImage):
+                scrollView.minimumZoomScale = 0.1
+                scrollView.maximumZoomScale = 1.25
+                self.rescaleAndCenterImageInScrollView(image: fullImage.image)
+            case .failure:
+                print ("error")
+                //self.showError()
+            }
+        }
+    }
+    
     private func rescaleAndCenterImageInScrollView(image: UIImage) {
         let minZoomScale = scrollView.minimumZoomScale
         let maxZoomScale = scrollView.maximumZoomScale

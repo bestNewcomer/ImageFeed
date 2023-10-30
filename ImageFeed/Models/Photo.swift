@@ -1,13 +1,13 @@
 import Foundation
 
-struct UrlsResult: Decodable {
-    let full: String
-    let thumb: String
+struct UrlsResult: Codable {
+    let full: String?
+    let thumb: String?
 }
 
-struct PhotoResult: Decodable {
+struct PhotoResult: Codable {
     let id: String
-    let createdAt: Date?
+    let createdAt: String?
     let width: Int
     let height: Int
     let description: String?
@@ -27,10 +27,10 @@ struct Photo {
     init(from result: PhotoResult) {
         self.id = result.id
         self.size = CGSize(width: result.width, height: result.height)
-        self.createdAt = result.createdAt
-        self.welcomeDescription = result.description
-        self.thumbImageURL = result.urls.thumb
-        self.largeImageURL = result.urls.full
+        self.createdAt = DateFormatter().date(from: result.createdAt ?? "")
+        self.welcomeDescription = result.description ?? ""
+        self.thumbImageURL = result.urls.thumb ?? ""
+        self.largeImageURL = result.urls.full ?? ""
         self.isLiked = result.likedByUser
     }
 }
