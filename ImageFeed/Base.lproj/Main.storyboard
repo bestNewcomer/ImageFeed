@@ -44,6 +44,9 @@
                                                     <rect key="frame" x="354" y="4" width="44" height="44"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="likeButtonOn"/>
+                                                    <connections>
+                                                        <action selector="clikLikeButton:" destination="gaf-Ud-lAU" eventType="touchUpInside" id="7XX-rd-4B2"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 августа 2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njK-eu-V2g" userLabel="DataLabel">
                                                     <rect key="frame" x="24" y="196" width="366" height="16"/>
@@ -77,6 +80,7 @@
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="EM3-GA-srm"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="siq-R0-0q5"/>
+                                    <outlet property="prefetchDataSource" destination="BYZ-38-t0r" id="bMm-d4-Jxv"/>
                                 </connections>
                             </tableView>
                         </subviews>

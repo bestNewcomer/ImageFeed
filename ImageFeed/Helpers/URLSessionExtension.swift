@@ -25,8 +25,9 @@ extension URLSession {
                 if 200 ..< 300 ~= statusCode {
                     do {
                         let decoder = JSONDecoder()
-                        decoder.keyDecodingStrategy = .convertFromSnakeCase
                         let result = try decoder.decode(T.self, from: data)
+//                        decoder.keyDecodingStrategy = .convertFromSnakeCase
+//                        let result = try decoder.decode(T.self, from: data)
                         fulfillCompletion(.success(result))
                     } catch {
                         fulfillCompletion(.failure(NetworkError.decodingError(error)))

@@ -1,13 +1,14 @@
 
 import UIKit
+import Kingfisher
 
 protocol ImagesListCellDelegate: AnyObject {
-  
+    func clickLikeImage (_ cell: ImagesListCell)
 }
 
 final class ImagesListCell: UITableViewCell {
     
-    weak var delegate: ImagesListCellDelegate?
+    
     
     //MARK:  - IB Outlets
     @IBOutlet var imageCell: UIImageView!
@@ -16,14 +17,22 @@ final class ImagesListCell: UITableViewCell {
     
     //MARK:  - Public Properties
     static let reuseIdentifier = "ImagesListCell"
+    weak var delegate: ImagesListCellDelegate?
     
     //MARK:  - Overrides Methods
-//    func config(image: UIImage?, date: String, like: Bool) {
-//        imageCell.image = image
-//        dataLabel.text = date
-//        
-//        let imageLike = like ? UIImage(named: "likeButtonOn") : UIImage(named: "likeButtonOff")
-//        likeButton.setImage(imageLike, for: .normal)
-//        
-//    }
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        imageCell.kf.cancelDownloadTask()
+    }
+    
+    func setIsLiked(isLiked: Bool) {
+        let likeImage = isLiked ? UIImage(named: "likeButtonOn") : UIImage(named: "likeButtonOff")
+        likeButton.setImage(likeImage, for: .normal)
+    }
+    
+    
+    @IBAction func clikLikeButton(_ sender: Any) {
+        delegate?.clickLikeImage(self)
+    }
 }

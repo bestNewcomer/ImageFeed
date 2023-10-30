@@ -14,7 +14,7 @@ final class ProfileImageService {
     
     //MARK:  - Initializers
     private init() {}
-
+    
     //MARK:  - Public Methods
     func fetchProfileImageURL(username: String, _ completion: @escaping (Result<String, Error>) -> Void) {
         assert(Thread.isMainThread)
@@ -27,17 +27,19 @@ final class ProfileImageService {
         }
         
         let currentTask = urlSession.objectTask(for: request) { [weak self] (response: Result<UserResult, Error>) in
-            guard let self = self else { return }
-            switch response {
-            case .success(let profilePhoto):
-                guard let mediumPhoto = profilePhoto.profileImage?.medium else { return }
-                self.avatarURL = URL(string: mediumPhoto)
-                completion(.success(mediumPhoto))
-                NotificationCenter.default.post(name: ProfileImageService.didChangeNotification, object: self, userInfo: ["URL": mediumPhoto])
-            case .failure(let error):
-                completion(.failure(error))
+            DispatchQueue.main.async {
+                guard let self = self else { return }
+                switch response {
+                case .success(let profilePhoto):
+                    guard let mediumPhoto = profilePhoto.profileImage?.medium else { return }
+                    self.avatarURL = URL(string: mediumPhoto)
+                    completion(.success(mediumPhoto))
+                    NotificationCenter.default.post(name: ProfileImageService.didChangeNotification, object: self, userInfo: ["URL": mediumPhoto])
+                case .failure(let error):
+                    completion(.failure(error))
+                }
+                self.currentTask = nil
             }
-            self.currentTask = nil
         }
         self.currentTask = currentTask
         currentTask.resume()

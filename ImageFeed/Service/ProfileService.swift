@@ -26,14 +26,16 @@ final class ProfileService {
         }
         
         let currentTask = urlSession.objectTask(for: request) { [weak self] (response: Result<ProfileResult, Error>) in
-            self?.currentTask = nil
-            switch response {
-            case .success(let profileResult):
-                let profile = Profile(result: profileResult)
-                self?.profile = profile
-                completion(.success(profile))
-            case .failure(let error):
-                completion(.failure(error))
+            DispatchQueue.main.async {
+                self?.currentTask = nil
+                switch response {
+                case .success(let profileResult):
+                    let profile = Profile(result: profileResult)
+                    self?.profile = profile
+                    completion(.success(profile))
+                case .failure(let error):
+                    completion(.failure(error))
+                }
             }
         }
         self.currentTask = currentTask

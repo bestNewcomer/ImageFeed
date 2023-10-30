@@ -1,4 +1,5 @@
 import UIKit
+import Kingfisher
 
 class ImagesListViewController: UIViewController {
     
@@ -76,9 +77,6 @@ extension ImagesListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        guard let image = UIImage(named: photos[indexPath.row]) else {
-//            return 0
-//        }
         let image = photos[indexPath.row]
         let imageInsets = UIEdgeInsets(top: 4, left: 16, bottom: 4, right: 16)
         let imageViewWidth = tableView.bounds.width - imageInsets.left - imageInsets.right
@@ -112,6 +110,31 @@ extension ImagesListViewController {
 }
 
 extension ImagesListViewController: ImagesListCellDelegate {
+    
+    func clickLikeImage (_ cell: ImagesListCell) {
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        let photo = photos[indexPath.row]
+        UIBlockingProgressHUD.show()
+        imagesListService.changeLike(photoId: photo.id, isLike: !photo.isLiked) { result in
+            switch result {
+            case .success:
+                self.photos = self.imagesListService.photos
+                cell.setIsLiked(isLiked: self.photos[indexPath.row].isLiked)
+                UIBlockingProgressHUD.dismiss()
+            case .failure (let error):
+                UIBlockingProgressHUD.dismiss()
+                let alert = UIAlertController(
+                            title: "Что-то пошло не так!",
+                            message: "\(error.localizedDescription)",
+                            preferredStyle: .alert)
+                alert.addAction(UIAlertAction(
+                            title: "Ок",
+                            style: .default))
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+    }
+    
     func configCell(for cell: ImagesListCell, with indexPath: IndexPath) {
         cell.delegate = self
         let photo = photos[indexPath.row]
@@ -129,6 +152,7 @@ extension ImagesListViewController: ImagesListCellDelegate {
                     } else {
                         cell.dataLabel.text = ""
                     }
+                    cell.setIsLiked(isLiked: self.photos[indexPath.row].isLiked)
                     self.photos = self.imagesListService.photos
                 case .failure (let error):
                     print("Изображение не загружено: \(error)")

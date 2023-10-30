@@ -13,6 +13,19 @@ struct PhotoResult: Codable {
     let description: String?
     let likedByUser: Bool
     let urls: UrlsResult
+    let user: ProfileResult
+    
+    private enum CodingKeys: String, CodingKey {
+        case id
+        case createdAt = "created_at"
+        case width
+        case height
+        case description
+        case likedByUser = "liked_by_user"
+        case user
+        case urls
+    }
+    
 }
 
 struct Photo {
@@ -24,13 +37,22 @@ struct Photo {
     let largeImageURL: String
     var isLiked: Bool
     
+}
+
+extension Photo {
     init(from result: PhotoResult) {
-        self.id = result.id
-        self.size = CGSize(width: result.width, height: result.height)
-        self.createdAt = DateFormatter().date(from: result.createdAt ?? "")
-        self.welcomeDescription = result.description ?? ""
-        self.thumbImageURL = result.urls.thumb ?? ""
-        self.largeImageURL = result.urls.full ?? ""
-        self.isLiked = result.likedByUser
+        self.init(
+            id: result.id, 
+            size: CGSize(width: result.width, height: result.height),
+            createdAt: ISO8601DateFormatter().date(from: result.createdAt ?? ""),
+            welcomeDescription: result.description ?? "",
+            thumbImageURL: result.urls.thumb ?? "",
+            largeImageURL: result.urls.full ?? "",
+            isLiked: result.likedByUser)
+    }
+    
+    struct LikeResult: Decodable {
+        let photo: PhotoResult
     }
 }
+
