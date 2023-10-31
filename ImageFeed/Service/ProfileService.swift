@@ -1,4 +1,6 @@
 import UIKit
+import WebKit
+import SwiftKeychainWrapper
 
 final class ProfileService {
     
@@ -35,10 +37,20 @@ final class ProfileService {
                 case .failure(let error):
                     completion(.failure(error))
                 }
-           }
+            }
         }
         self.currentTask = currentTask
         currentTask.resume()
+    }
+    
+    func clean() {
+        HTTPCookieStorage.shared.removeCookies(since: Date.distantPast)
+        WKWebsiteDataStore.default().fetchDataRecords(ofTypes: WKWebsiteDataStore.allWebsiteDataTypes()) { records in
+            records.forEach { record in
+                WKWebsiteDataStore.default().removeData(ofTypes: record.dataTypes, for: [record], completionHandler: {})
+            }
+        }
+        KeychainWrapper.standard.removeObject(forKey: Constants.bearerToken)
     }
 }
 

@@ -40,9 +40,11 @@ final class ProfileViewController: UIViewController {
     }()
     
     private var logoutButton: UIButton = {
-        let button = UIButton()
-        button.setImage(UIImage(named: "exitButton"), for: .normal)
-        button.addTarget(ProfileViewController.self, action: #selector(tapLogoutButton), for: .touchUpInside)
+        let button = UIButton.systemButton(
+        with: UIImage(named: "exitButton")!,
+        target: ProfileViewController?.self,
+                      action: #selector(Self.tapLogoutButton))
+        button.tintColor = .red
         return button
     }()
     
@@ -55,12 +57,6 @@ final class ProfileViewController: UIViewController {
         updateProfileDetails()
         profileImageObsserver()
     }
-    
-    //    override func viewDidAppear(_ animated: Bool) {
-    //        super.viewDidAppear(animated)
-    //
-    //        profileImageObsserver()
-    //    }
     
     //MARK:  - Private Methods
     private func addSubView(){
@@ -98,6 +94,26 @@ final class ProfileViewController: UIViewController {
     
     @objc
     private func tapLogoutButton() {
+        profileService.clean()
+        present(SplashViewController(), animated: true)
+//        let alert = UIAlertController(
+//                    title: "Пока, пока!",
+//                    message: "Уверены что хотите выйти?",
+//                    preferredStyle: .alert)
+//        
+//        alert.addAction(UIAlertAction(
+//                    title: "Да",
+//                    style: .default){ _ in
+//                        self.profileService.clean()
+//                        self.present(SplashViewController(), animated: true)
+//                    })
+//        alert.addAction(UIAlertAction(
+//                    title: "Нет",
+//                    style: .default) { _ in
+//                        self.dismiss(animated: true)
+//                    })
+//        self.present(alert, animated: true, completion: nil)
+    
     }
     
     private func updateAvatar(notification: Notification) {
