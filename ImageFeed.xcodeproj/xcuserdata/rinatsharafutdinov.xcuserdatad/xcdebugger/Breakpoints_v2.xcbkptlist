@@ -14,8 +14,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "tableView(_:heightForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,10 +30,10 @@
             filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "ImagesListService"
-            landmarkType = "3">
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "changeLike(photoId:isLike:_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "6289A520-CF3B-4E9C-8E92-AEE30BCEF7D2 - 96bd83d9295c1956"
@@ -78,10 +78,10 @@
             filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "ImagesListService"
-            landmarkType = "3">
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "changeLike(photoId:isLike:_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "26FAE8F6-CBC1-480A-AA47-57D2DB1D6B92 - 96bd83d9295c19f3"
@@ -126,8 +126,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
             landmarkName = "clickLikeImage(_:)"
             landmarkType = "7">
             <Locations>
@@ -189,8 +189,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "clickLikeImage(_:)"
             landmarkType = "7">
             <Locations>
@@ -252,8 +252,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "clickLikeImage(_:)"
             landmarkType = "7">
             <Locations>
@@ -315,8 +315,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "clickLikeImage(_:)"
             landmarkType = "7">
             <Locations>
@@ -423,8 +423,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "clickLikeImage(_:)"
             landmarkType = "7">
             <Locations>
@@ -486,8 +486,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "clickLikeImage(_:)"
             landmarkType = "7">
             <Locations>
@@ -549,8 +549,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "clickLikeImage(_:)"
             landmarkType = "7">
             <Locations>
@@ -612,8 +612,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
             landmarkName = "clickLikeImage(_:)"
             landmarkType = "7">
             <Locations>
@@ -675,8 +675,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
             landmarkName = "clickLikeImage(_:)"
             landmarkType = "7">
             <Locations>
@@ -753,8 +753,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
+            startingLineNumber = "149"
+            endingLineNumber = "149"
             landmarkName = "clickLikeImage(_:)"
             landmarkType = "7">
             <Locations>
@@ -831,8 +831,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
             landmarkName = "clickLikeImage(_:)"
             landmarkType = "7">
             <Locations>
@@ -909,8 +909,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "clickLikeImage(_:)"
             landmarkType = "7">
             <Locations>
@@ -987,10 +987,10 @@
             filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "ImagesListService"
-            landmarkType = "3">
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "changeLike(photoId:isLike:_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "C9E21A9B-13A8-4265-A0A2-1D2C98DA1C51 - 1643a41a48f1f782"
@@ -1035,10 +1035,10 @@
             filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "ImagesListService"
-            landmarkType = "3">
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "changeLike(photoId:isLike:_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "4BAFBBE7-E8B4-4BBA-8392-7B1B6D9532D5 - 1643a41a48f1f706"
@@ -1083,8 +1083,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "clikLikeButton(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1099,8 +1099,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "prepareForReuse()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1115,8 +1115,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "setIsLiked(isLiked:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1131,8 +1131,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "setIsLiked(isLiked:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1147,10 +1147,10 @@
             filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "ImagesListService"
-            landmarkType = "3">
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "changeLike(photoId:isLike:_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "EF8883D3-E8FE-4823-93F3-161AE9ADA5CC - 96bd83d9295c1fc2"
@@ -1225,10 +1225,10 @@
             filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "ImagesListService"
-            landmarkType = "3">
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "changeLike(photoId:isLike:_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "23C8A549-3FB3-4043-9CA7-9451823AA2C7 - 96bd83d9295c1e3d"
@@ -1303,10 +1303,10 @@
             filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "ImagesListService"
-            landmarkType = "3">
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "changeLike(photoId:isLike:_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "92526F76-2B3B-4593-A6F5-D36740686235 - 96bd83d9295c1e1c"
@@ -1351,8 +1351,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "updateTableViewAnimated()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1367,8 +1367,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "60"
-            endingLineNumber = "60"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "updateTableViewAnimated()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1383,8 +1383,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "updateTableViewAnimated()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1399,8 +1399,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "updateTableViewAnimated()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1415,8 +1415,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "updateTableViewAnimated()"
             landmarkType = "7">
             <Locations>
@@ -1463,8 +1463,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "updateTableViewAnimated()"
             landmarkType = "7">
             <Locations>
@@ -1511,8 +1511,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "updateTableViewAnimated()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1527,8 +1527,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "updateTableViewAnimated()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1543,8 +1543,8 @@
             filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "updateTableViewAnimated()"
             landmarkType = "7">
             <Locations>

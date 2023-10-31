@@ -11,10 +11,7 @@ final class ProfileImageService {
     private let builder = URLRequestBuilder.shared
     private (set) var avatarURL: URL?
     private var currentTask: URLSessionTask?
-    
-//    //MARK:  - Initializers
-//    private init() {}
-    
+  
     //MARK:  - Public Methods
     func fetchProfileImageURL(username: String, _ completion: @escaping (Result<String, Error>) -> Void) {
         assert(Thread.isMainThread)

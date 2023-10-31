@@ -16,12 +16,6 @@ class ImagesListViewController: UIViewController {
     private let imagesListService = ImagesListService()
     private var imageListServiceObserver: NSObjectProtocol?
     private let placeholder = UIImage(named: "stubImage")
-    private lazy var dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .long
-        formatter.timeStyle = .none
-        return formatter
-    }()
     
     //MARK:  - Lifecycle
     override func viewDidLoad() {
@@ -82,7 +76,7 @@ class ImagesListViewController: UIViewController {
                 switch result {
                 case .success:
                     if let created = photo.createdAt {
-                        cell.dataLabel.text = self.dateFormatter.string(from: created)
+                        cell.dataLabel.text = DateFormatter.dateFormatter.string(from: created)
                     } else {
                         cell.dataLabel.text = ""
                     }

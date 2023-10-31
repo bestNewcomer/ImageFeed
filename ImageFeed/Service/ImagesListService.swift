@@ -19,6 +19,8 @@ final class ImagesListService {
     //MARK:  - Public Methods
     func fetchPhotosNextPage() {
         assert(Thread.isMainThread)
+        
+        guard currentTask == nil else { return }
         let nextPage = lastLoadedPage == nil ? 1 : lastLoadedPage! + 1
         
         guard let request = makeFetchPhotoRequest(page: nextPage, perPage: 10) else {
@@ -42,6 +44,7 @@ final class ImagesListService {
                 case .failure(let error):
                     assertionFailure("Error - \(error)")
                 }
+                self.currentTask = nil
             }
         }
         self.currentTask = currentTask

@@ -1,9 +1,11 @@
-import Foundation
+//
+//  PhotoResultStruct.swift
+//  ImageFeed
+//
+//  Created by Ринат Шарафутдинов on 31.10.2023.
+//
 
-struct UrlsResult: Codable {
-    let full: String?
-    let thumb: String?
-}
+import Foundation
 
 struct PhotoResult: Codable {
     let id: String
@@ -14,7 +16,6 @@ struct PhotoResult: Codable {
     let likedByUser: Bool
     let user: ProfileResult
     let urls: UrlsResult
-    
     
     private enum CodingKeys: String, CodingKey {
         case id
@@ -28,29 +29,16 @@ struct PhotoResult: Codable {
     }
 }
 
-struct Photo {
-    let id: String
-    let size: CGSize
-    let createdAt: Date?
-    let welcomeDescription: String?
-    let thumbImageURL: String
-    let largeImageURL: String
-    let isLiked: Bool
-}
-
 extension Photo {
     init(from result: PhotoResult) {
         self.init(
-            id: result.id, 
+            id: result.id,
             size: CGSize(width: result.width, height: result.height),
-            createdAt: ISO8601DateFormatter().date(from: result.createdAt ?? ""),
+            createdAt: DateFormatter.formatterDate.date(from: result.createdAt ?? ""),
             welcomeDescription: result.description ?? "",
             thumbImageURL: result.urls.thumb ?? "",
             largeImageURL: result.urls.full ?? "",
-            isLiked: result.likedByUser)
+            isLiked: result.likedByUser
+        )
     }
-}
-
-struct LikeResult: Decodable {
-    let photo: PhotoResult
 }

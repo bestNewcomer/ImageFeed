@@ -3,13 +3,11 @@ import UIKit
 import Kingfisher
 
 final class ImagesListCell: UITableViewCell {
-    
-    
-    
+
     //MARK:  - IB Outlets
     @IBOutlet var imageCell: UIImageView!
-    @IBOutlet var likeButton: UIButton!
-    @IBOutlet var dataLabel: UILabel!
+    @IBOutlet weak var dataLabel: UILabel!
+    @IBOutlet private weak var likeButton: UIButton!
     
     //MARK:  - Public Properties
     static let reuseIdentifier = "ImagesListCell"
