@@ -96,7 +96,7 @@ extension ImagesListService {
                    + "page=\(page)"
                    + "&&per_page=\(perPage)"),
             httpMethod: "GET",
-            baseURLString: Constants.defaultBaseURL
+            baseURLString: Constants.defaultApiBaseURL
         )
     }
     
@@ -104,7 +104,7 @@ extension ImagesListService {
         builder.makeHTTPRequest(
             path: "/photos/\(photoID)/like",
             httpMethod: isLike ? "POST" : "DELETE",
-            baseURLString: Constants.defaultBaseURL
+            baseURLString: Constants.defaultApiBaseURL
         )
     }
 }

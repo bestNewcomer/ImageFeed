@@ -68,10 +68,10 @@ final class SplashViewController: UIViewController {
     }
     
     private func showLoginAlert(error: Error) {
-        alertPresenter.showAlert(title: "Что-то пошло не так :(",
-                                 message: "Не удалось войти в ситему,\(error.localizedDescription)") {
-            self.performSegue(withIdentifier: self.showAuthenticationScreenSegueIdentifier, sender: nil)
-        }
+                alertPresenter.showAlert(title: "Что-то пошло не так :(",
+                                         message: "Не удалось войти в ситему,\(error.localizedDescription)") {
+                    self.performSegue(withIdentifier: self.showAuthenticationScreenSegueIdentifier, sender: nil)
+                }
     }
 }
 
