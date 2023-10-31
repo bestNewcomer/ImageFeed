@@ -1,9 +1,15 @@
 import UIKit
 import Kingfisher
 
-final class ProfileViewController: UIViewController {
-    
+protocol ProfileViewControllerProtocol: AnyObject {
+    func updateAvatar(url: URL?)
+    func updateProfileDetails(profile: Profile?)
+}
+
+final class ProfileViewController: UIViewController, ProfileViewControllerProtocol {
+   
     //MARK:  - Private Properties
+    lazy var presenter: ProfilePresenterProtocol = ProfilePresenter(view: self)
     private let profileService = ProfileService.shared
     private let profileImageService = ProfileImageService.shared
     private var profileImageServiceObserver: NSObjectProtocol?
@@ -53,13 +59,45 @@ final class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .ypBlack
+        
+        if let url = profileImageService.avatarURL {
+            updateAvatar(url: url)
+        }
+        presenter.viewDidLoad()
         addSubView()
         applyConstraints()
-        updateProfileDetails()
-        profileImageObsserver()
+    }
+    
+    //MARK:  - Public Methods
+    func updateAvatar(url: URL?) {
+        profileImage.kf.indicatorType = .activity
+        profileImage.kf.setImage(with: url, placeholder: UIImage(named: "avatar_placeholder"))
+        
+        let cache = ImageCache.default
+        cache.clearMemoryCache()
+        cache.clearDiskCache()
+    }
+    
+    func updateProfileDetails(profile: Profile?) {
+        guard let profile = profileService.profile
+        else { assertionFailure("Нет сохраненного профиля")
+            return }
+        self.nameLabel.text = profile.name
+        self.idLabel.text = profile.loginName
+        self.descriptionLabel.text = profile.bio
     }
     
     //MARK:  - Private Methods
+    private func updateAvatar(notification: Notification) {
+        guard
+            let userInfo = notification.userInfo,
+            let profileImageURL = userInfo["URL"] as? String,
+            let url = URL(string: profileImageURL)
+        else { return }
+        
+        updateAvatar(url: url)
+    }
+    
     private func addSubView(){
         view.addSubview(profileImage)
         view.addSubview(nameLabel)
@@ -114,44 +152,6 @@ final class ProfileViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    private func updateAvatar(notification: Notification) {
-        guard
-            let userInfo = notification.userInfo,
-            let profileImageURL = userInfo["URL"] as? String,
-            let url = URL(string: profileImageURL)
-        else { return }
-        
-        updateAvatar(url: url)
-    }
     
-    private func updateAvatar(url: URL) {
-        profileImage.kf.indicatorType = .activity
-        profileImage.kf.setImage(with: url, placeholder: UIImage(named: "avatar_placeholder"))
-        
-        let cache = ImageCache.default
-        cache.clearMemoryCache()
-        cache.clearDiskCache()
-    }
-    
-    private func updateProfileDetails() {
-        guard let profile = profileService.profile
-        else { assertionFailure("Нет сохраненного профиля")
-            return }
-        self.nameLabel.text = profile.name
-        self.idLabel.text = profile.loginName
-        self.descriptionLabel.text = profile.bio
-    }
 }
 
-// MARK: - extension ProfileViewController
-private extension ProfileViewController {
-    
-    func profileImageObsserver() {
-        if let url = profileImageService.avatarURL {
-            updateAvatar(url: url)
-        }
-        profileImageServiceObserver = NotificationCenter.default.addObserver(forName: ProfileImageService.didChangeNotification, object: nil, queue: .main){
-            [weak self] notification in self?.updateAvatar(notification: notification)
-        }
-    }
-}
