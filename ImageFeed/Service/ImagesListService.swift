@@ -56,7 +56,7 @@ final class ImagesListService {
             return
         }
         
-        let currentTask = urlSession.objectTask(for: request) { [weak self] (response: Result<[LikeResult], Error>) in
+        let currentTask = urlSession.objectTask(for: request) { [weak self] (response: Result<LikeResult, Error>) in
             DispatchQueue.main.async {
                 guard let self = self else { return }
                 switch response {

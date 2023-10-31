@@ -32,8 +32,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "76"
             endingLineNumber = "76"
-            landmarkName = "changeLike(photoId:isLike:_:)"
-            landmarkType = "7">
+            landmarkName = "ImagesListService"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "6289A520-CF3B-4E9C-8E92-AEE30BCEF7D2 - 96bd83d9295c1956"
@@ -80,8 +80,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "79"
             endingLineNumber = "79"
-            landmarkName = "changeLike(photoId:isLike:_:)"
-            landmarkType = "7">
+            landmarkName = "ImagesListService"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "26FAE8F6-CBC1-480A-AA47-57D2DB1D6B92 - 96bd83d9295c19f3"
@@ -989,8 +989,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
-            landmarkName = "changeLike(photoId:isLike:_:)"
-            landmarkType = "7">
+            landmarkName = "ImagesListService"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "C9E21A9B-13A8-4265-A0A2-1D2C98DA1C51 - 1643a41a48f1f782"
@@ -1037,8 +1037,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
             endingLineNumber = "56"
-            landmarkName = "changeLike(photoId:isLike:_:)"
-            landmarkType = "7">
+            landmarkName = "ImagesListService"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "4BAFBBE7-E8B4-4BBA-8392-7B1B6D9532D5 - 1643a41a48f1f706"
@@ -1149,8 +1149,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
             endingLineNumber = "64"
-            landmarkName = "changeLike(photoId:isLike:_:)"
-            landmarkType = "7">
+            landmarkName = "ImagesListService"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "EF8883D3-E8FE-4823-93F3-161AE9ADA5CC - 96bd83d9295c1fc2"
@@ -1227,8 +1227,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
             endingLineNumber = "65"
-            landmarkName = "changeLike(photoId:isLike:_:)"
-            landmarkType = "7">
+            landmarkName = "ImagesListService"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "23C8A549-3FB3-4043-9CA7-9451823AA2C7 - 96bd83d9295c1e3d"
@@ -1305,8 +1305,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
             endingLineNumber = "66"
-            landmarkName = "changeLike(photoId:isLike:_:)"
-            landmarkType = "7">
+            landmarkName = "ImagesListService"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "92526F76-2B3B-4593-A6F5-D36740686235 - 96bd83d9295c1e1c"
