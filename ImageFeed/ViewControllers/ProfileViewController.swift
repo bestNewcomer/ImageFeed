@@ -52,6 +52,7 @@ final class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .ypBlack
         addSubView()
         applyConstraints()
         updateProfileDetails()
@@ -94,8 +95,23 @@ final class ProfileViewController: UIViewController {
     
     @objc
     private func tapLogoutButton() {
-        profileService.clean()
-        present(SplashViewController(), animated: true)
+        let alert = UIAlertController(
+                    title: "Пока, пока!",
+                    message: "Уверены что хотите выйти?",
+                    preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(
+                    title: "Да",
+                    style: .default){ _ in
+                        self.profileService.clean()
+                        self.present(SplashViewController(), animated: true)
+                    })
+        alert.addAction(UIAlertAction(
+                    title: "Нет",
+                    style: .default) { _ in
+                        self.dismiss(animated: true)
+                    })
+        self.present(alert, animated: true, completion: nil)
     }
     
     private func updateAvatar(notification: Notification) {
