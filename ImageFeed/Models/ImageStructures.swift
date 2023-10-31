@@ -12,8 +12,9 @@ struct PhotoResult: Codable {
     let height: Int
     let description: String?
     let likedByUser: Bool
-    let urls: UrlsResult
     let user: ProfileResult
+    let urls: UrlsResult
+    
     
     private enum CodingKeys: String, CodingKey {
         case id
@@ -25,7 +26,6 @@ struct PhotoResult: Codable {
         case user
         case urls
     }
-    
 }
 
 struct Photo {
@@ -35,8 +35,7 @@ struct Photo {
     let welcomeDescription: String?
     let thumbImageURL: String
     let largeImageURL: String
-    var isLiked: Bool
-    
+    let isLiked: Bool
 }
 
 extension Photo {
@@ -50,9 +49,8 @@ extension Photo {
             largeImageURL: result.urls.full ?? "",
             isLiked: result.likedByUser)
     }
-    
-    struct LikeResult: Decodable {
-        let photo: PhotoResult
-    }
 }
 
+struct LikeResult: Decodable {
+    let photo: PhotoResult
+}

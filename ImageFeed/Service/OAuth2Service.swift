@@ -20,6 +20,7 @@ final class OAuth2Service {
     
     //MARK:  - Public Methods
     func fetchOAuthToken(_ code: String, completion: @escaping (Result<String, Error>) -> Void ){
+        assert(Thread.isMainThread)
         if lastCode == code || currentTask != nil { return }
         
         lastCode = code
@@ -41,7 +42,7 @@ final class OAuth2Service {
                     self?.lastCode = nil
                     completion(.failure(error))
                 }
-            }
+           }
         }
         self.currentTask = currentTask
         currentTask.resume()

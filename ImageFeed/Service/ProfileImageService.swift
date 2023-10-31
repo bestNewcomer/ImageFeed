@@ -12,13 +12,12 @@ final class ProfileImageService {
     private (set) var avatarURL: URL?
     private var currentTask: URLSessionTask?
     
-    //MARK:  - Initializers
-    private init() {}
+//    //MARK:  - Initializers
+//    private init() {}
     
     //MARK:  - Public Methods
     func fetchProfileImageURL(username: String, _ completion: @escaping (Result<String, Error>) -> Void) {
         assert(Thread.isMainThread)
-        currentTask?.cancel()
         
         guard let request = makeFetchProfileRequest() else {
             assertionFailure("Не верный запрос")
@@ -26,7 +25,7 @@ final class ProfileImageService {
             return
         }
         
-        let currentTask = urlSession.objectTask(for: request) { [weak self] (response: Result<UserResult, Error>) in
+        let currentTask = urlSession.objectTask(for: request) { [weak self] (response: Result<ProfileResult, Error>) in
             DispatchQueue.main.async {
                 guard let self = self else { return }
                 switch response {
@@ -54,6 +53,5 @@ extension ProfileImageService {
             httpMethod: "GET",
             baseURLString: Constants.defaultBaseURL
         )
-        
     }
 }

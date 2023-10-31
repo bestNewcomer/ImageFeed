@@ -2,10 +2,6 @@
 import UIKit
 import Kingfisher
 
-protocol ImagesListCellDelegate: AnyObject {
-    func clickLikeImage (_ cell: ImagesListCell)
-}
-
 final class ImagesListCell: UITableViewCell {
     
     
@@ -26,13 +22,14 @@ final class ImagesListCell: UITableViewCell {
         imageCell.kf.cancelDownloadTask()
     }
     
+    //MARK:  - IB Actions
+    @IBAction func clikLikeButton(_ sender: Any) {
+        delegate?.clickLikeImage(self)
+    }
+    
+    // MARK:  - Public Methods
     func setIsLiked(isLiked: Bool) {
         let likeImage = isLiked ? UIImage(named: "likeButtonOn") : UIImage(named: "likeButtonOff")
         likeButton.setImage(likeImage, for: .normal)
-    }
-    
-    
-    @IBAction func clikLikeButton(_ sender: Any) {
-        delegate?.clickLikeImage(self)
     }
 }

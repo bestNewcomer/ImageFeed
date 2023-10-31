@@ -6,10 +6,11 @@ final class URLRequestBuilder {
     static let shared = URLRequestBuilder()
     
     //MARK:  - Private Properties
-    private let storage = OAuth2TokenStorage.shared
+    private let storage: OAuth2TokenStorage
     
-    //MARK:  - Initializers
-    private init () {}
+    init(storage: OAuth2TokenStorage = .shared) {
+        self.storage = storage
+    }
     
     //MARK:  - Public Methods
     func makeHTTPRequest(path: String,httpMethod: String,baseURLString: String) -> URLRequest? {

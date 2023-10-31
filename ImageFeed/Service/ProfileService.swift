@@ -17,7 +17,6 @@ final class ProfileService {
     //MARK:  - Public Methods
     func fetchProfile(completion: @escaping (Result<Profile, Error>) -> Void) {
         assert(Thread.isMainThread)
-        currentTask?.cancel()
         
         guard let request = makeFetchProfileRequest() else {
             assertionFailure("Не верный запрос")
@@ -36,7 +35,7 @@ final class ProfileService {
                 case .failure(let error):
                     completion(.failure(error))
                 }
-            }
+           }
         }
         self.currentTask = currentTask
         currentTask.resume()

@@ -56,11 +56,11 @@ final class ProfileViewController: UIViewController {
         profileImageObsserver()
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        
-//        profileImageObsserver()
-//    }
+    //    override func viewDidAppear(_ animated: Bool) {
+    //        super.viewDidAppear(animated)
+    //
+    //        profileImageObsserver()
+    //    }
     
     //MARK:  - Private Methods
     private func addSubView(){
@@ -111,7 +111,6 @@ final class ProfileViewController: UIViewController {
     }
     
     private func updateAvatar(url: URL) {
-//        let processor = RoundCornerImageProcessor(cornerRadius: 70, backgroundColor: .clear)
         profileImage.kf.indicatorType = .activity
         profileImage.kf.setImage(with: url, placeholder: UIImage(named: "avatar_placeholder"))
         
@@ -130,7 +129,9 @@ final class ProfileViewController: UIViewController {
     }
 }
 
+// MARK: - extension ProfileViewController
 private extension ProfileViewController {
+    
     func profileImageObsserver() {
         if let url = profileImageService.avatarURL {
             updateAvatar(url: url)

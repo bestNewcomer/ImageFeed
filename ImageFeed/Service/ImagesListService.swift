@@ -2,15 +2,21 @@ import Foundation
 
 final class ImagesListService {
     
-    static let shared = ImagesListService()
+    //MARK:  - Public Properties
+    static let didChangeNotification = Notification.Name(rawValue: "ImageListServiceDidChange")
     
+    //MARK:  - Private Properties
     private (set) var photos: [Photo] = []
     private var lastLoadedPage: Int?
-    static let didChangeNotification = Notification.Name(rawValue: "ImageListServiceDidChange")
     private var currentTask: URLSessionTask?
     private let urlSession = URLSession.shared
-    private let builder = URLRequestBuilder.shared
+    private let builder: URLRequestBuilder
     
+    init(builder: URLRequestBuilder = .shared) {
+        self.builder = builder
+    }
+    
+    //MARK:  - Public Methods
     func fetchPhotosNextPage() {
         assert(Thread.isMainThread)
         let nextPage = lastLoadedPage == nil ? 1 : lastLoadedPage! + 1
@@ -23,7 +29,6 @@ final class ImagesListService {
         let currentTask = urlSession.objectTask(for: request) { [weak self] (response: Result<[PhotoResult], Error>) in
             DispatchQueue.main.async {
                 guard let self = self else { return }
-                
                 switch response {
                 case .success(let photoResult):
                     let photos = photoResult.map { Photo(from: $0) }
@@ -47,25 +52,25 @@ final class ImagesListService {
         assert(Thread.isMainThread)
         
         guard let request = makeFetchLikeRequest(photoID: photoId, isLike: isLike) else {
-            assertionFailure("Не верный запрос")
+            assertionFailure("Ошибка лайка!))")
             return
         }
         
         let currentTask = urlSession.objectTask(for: request) { [weak self] (response: Result<[LikeResult], Error>) in
             DispatchQueue.main.async {
                 guard let self = self else { return }
-                
                 switch response {
                 case .success:
-                    if let index = self.photos.firstIndex(where: {$0.id == photoId}) {
-                        let photo = self.photos[index]
-                        let newPhoto = Photo(id: photo.id,
-                                             size: photo.size,
-                                             createdAt: photo.createdAt,
-                                             welcomeDescription: photo.welcomeDescription,
-                                             thumbImageURL: photo.thumbImageURL,
-                                             largeImageURL: photo.largeImageURL,
-                                             isLiked: !photo.isLiked
+                    if let index = self.photos.firstIndex(where: { $0.id == photoId }) {
+                        let result = self.photos[index]
+                        let newPhoto = Photo(
+                            id: result.id,
+                            size: result.size,
+                            createdAt: result.createdAt,
+                            welcomeDescription: result.welcomeDescription,
+                            thumbImageURL: result.thumbImageURL,
+                            largeImageURL: result.largeImageURL,
+                            isLiked: !result.isLiked
                         )
                         self.photos[index] = newPhoto
                         completion(.success(()))
@@ -75,11 +80,12 @@ final class ImagesListService {
                 }
             }
         }
-        
         self.currentTask = currentTask
         currentTask.resume()
     }
 }
+
+// MARK: - extension ImagesListService
 extension ImagesListService {
     private func makeFetchPhotoRequest(page: Int, perPage: Int) -> URLRequest? {
         builder.makeHTTPRequest(
@@ -89,7 +95,6 @@ extension ImagesListService {
             httpMethod: "GET",
             baseURLString: Constants.defaultBaseURL
         )
-        
     }
     
     private func makeFetchLikeRequest(photoID: String, isLike: Bool) -> URLRequest? {
@@ -98,6 +103,5 @@ extension ImagesListService {
             httpMethod: isLike ? "POST" : "DELETE",
             baseURLString: Constants.defaultBaseURL
         )
-        
     }
 }
