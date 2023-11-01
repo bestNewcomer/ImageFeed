@@ -20,9 +20,8 @@ final class OAuth2Service {
     
     //MARK:  - Public Methods
     func fetchOAuthToken(_ code: String, completion: @escaping (Result<String, Error>) -> Void ){
-        guard !(code == lastCode && currentTask != nil) else {
-            return
-        }
+        assert(Thread.isMainThread)
+        if lastCode == code || currentTask != nil { return }
         
         lastCode = code
         guard let request = authTokenRequest(code: code) else {
@@ -32,16 +31,18 @@ final class OAuth2Service {
         }
         
         let currentTask = urlSession.objectTask(for: request) { [weak self] (response: Result<OAuthTokenResponseBody, Error>) in
-            self?.currentTask = nil
-            switch response {
-            case .success(let body):
-                let authToken = body.accessToken
-                self?.storage.token = authToken
-                completion(.success(authToken))
-            case .failure(let error):
-                self?.lastCode = nil
-                completion(.failure(error))
-            }
+            DispatchQueue.main.async {
+                self?.currentTask = nil
+                switch response {
+                case .success(let body):
+                    let authToken = body.accessToken
+                    self?.storage.token = authToken
+                    completion(.success(authToken))
+                case .failure(let error):
+                    self?.lastCode = nil
+                    completion(.failure(error))
+                }
+           }
         }
         self.currentTask = currentTask
         currentTask.resume()

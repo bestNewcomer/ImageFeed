@@ -1,4 +1,6 @@
 import UIKit
+import WebKit
+import SwiftKeychainWrapper
 
 final class ProfileService {
     
@@ -17,7 +19,6 @@ final class ProfileService {
     //MARK:  - Public Methods
     func fetchProfile(completion: @escaping (Result<Profile, Error>) -> Void) {
         assert(Thread.isMainThread)
-        currentTask?.cancel()
         
         guard let request = makeFetchProfileRequest() else {
             assertionFailure("Не верный запрос")
@@ -26,18 +27,30 @@ final class ProfileService {
         }
         
         let currentTask = urlSession.objectTask(for: request) { [weak self] (response: Result<ProfileResult, Error>) in
-            self?.currentTask = nil
-            switch response {
-            case .success(let profileResult):
-                let profile = Profile(result: profileResult)
-                self?.profile = profile
-                completion(.success(profile))
-            case .failure(let error):
-                completion(.failure(error))
+            DispatchQueue.main.async {
+                self?.currentTask = nil
+                switch response {
+                case .success(let profileResult):
+                    let profile = Profile(result: profileResult)
+                    self?.profile = profile
+                    completion(.success(profile))
+                case .failure(let error):
+                    completion(.failure(error))
+                }
             }
         }
         self.currentTask = currentTask
         currentTask.resume()
+    }
+    
+    func clean() {
+        HTTPCookieStorage.shared.removeCookies(since: Date.distantPast)
+        WKWebsiteDataStore.default().fetchDataRecords(ofTypes: WKWebsiteDataStore.allWebsiteDataTypes()) { records in
+            records.forEach { record in
+                WKWebsiteDataStore.default().removeData(ofTypes: record.dataTypes, for: [record], completionHandler: {})
+            }
+        }
+        KeychainWrapper.standard.removeObject(forKey: Constants.bearerToken)
     }
 }
 

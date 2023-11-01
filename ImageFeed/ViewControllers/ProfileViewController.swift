@@ -10,8 +10,7 @@ final class ProfileViewController: UIViewController {
     
     private var profileImage: UIImageView = {
         let profileImage = UIImageView(image: UIImage(named: "Avatar"))
-        profileImage.backgroundColor = .clear
-        profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
+        profileImage.layer.cornerRadius = 35
         profileImage.clipsToBounds = true
         return profileImage
     }()
@@ -41,9 +40,11 @@ final class ProfileViewController: UIViewController {
     }()
     
     private var logoutButton: UIButton = {
-        let button = UIButton()
-        button.setImage(UIImage(named: "exitButton"), for: .normal)
-        button.addTarget(ProfileViewController.self, action: #selector(tapLogoutButton), for: .touchUpInside)
+        let button = UIButton.systemButton(
+        with: UIImage(named: "exitButton")!,
+        target: ProfileViewController?.self,
+                      action: #selector(Self.tapLogoutButton))
+        button.tintColor = .ypRed
         return button
     }()
     
@@ -51,17 +52,12 @@ final class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .ypBlack
         addSubView()
         applyConstraints()
         updateProfileDetails()
         profileImageObsserver()
     }
-    
-//    override func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        
-//        profileImageObsserver()
-//    }
     
     //MARK:  - Private Methods
     private func addSubView(){
@@ -99,6 +95,23 @@ final class ProfileViewController: UIViewController {
     
     @objc
     private func tapLogoutButton() {
+        let alert = UIAlertController(
+                    title: "Пока, пока!",
+                    message: "Уверены что хотите выйти?",
+                    preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(
+                    title: "Да",
+                    style: .default){ _ in
+                        self.profileService.clean()
+                        self.present(SplashViewController(), animated: true)
+                    })
+        alert.addAction(UIAlertAction(
+                    title: "Нет",
+                    style: .default) { _ in
+                        self.dismiss(animated: true)
+                    })
+        self.present(alert, animated: true, completion: nil)
     }
     
     private func updateAvatar(notification: Notification) {
@@ -112,9 +125,8 @@ final class ProfileViewController: UIViewController {
     }
     
     private func updateAvatar(url: URL) {
-        let processor = RoundCornerImageProcessor(cornerRadius: 70, backgroundColor: .clear)
         profileImage.kf.indicatorType = .activity
-        profileImage.kf.setImage(with: url, placeholder: UIImage(named: "avatar_placeholder"), options: [.processor(processor)])
+        profileImage.kf.setImage(with: url, placeholder: UIImage(named: "avatar_placeholder"))
         
         let cache = ImageCache.default
         cache.clearMemoryCache()
@@ -131,7 +143,9 @@ final class ProfileViewController: UIViewController {
     }
 }
 
+// MARK: - extension ProfileViewController
 private extension ProfileViewController {
+    
     func profileImageObsserver() {
         if let url = profileImageService.avatarURL {
             updateAvatar(url: url)

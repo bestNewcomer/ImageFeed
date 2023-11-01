@@ -33,22 +33,11 @@ final class WebViewViewController: UIViewController {
             guard let self = self else { return }
             self.updateProgress()
         })
-        updateProgress()
     }
     
     //MARK:  - IB Actions
     @IBAction private func didTapBackButton(_ sender: Any) {
         delegate?.webViewViewControllerDidCancel(self)
-    }
-    
-    //MARK:  - Overrides Methods
-
-    override func observeValue(forKeyPath keyPath: String?,of object: Any?,change: [NSKeyValueChangeKey : Any]?,context: UnsafeMutableRawPointer?) {
-        if keyPath == #keyPath(WKWebView.estimatedProgress) {
-            updateProgress()
-        } else {
-            super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
-        }
     }
     
     //MARK:  - Private Methods

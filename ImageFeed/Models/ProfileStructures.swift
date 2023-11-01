@@ -5,6 +5,16 @@ struct ProfileResult: Codable {
     let firstName: String?
     let lastName: String?
     let bio: String?
+    let profileImage: ProfileImage?
+    
+    private enum CodingKeys: String, CodingKey {
+        case username = "username"
+        case firstName = "first_name"
+        case lastName = "last_name"
+        case bio
+        case profileImage = "profile_image"
+    }
+
 }
 
 struct Profile: Codable {
@@ -23,10 +33,6 @@ extension Profile {
             bio: profile.bio
             )
     }
-}
-
-struct UserResult: Codable {
-    let profileImage: ProfileImage?
 }
 
 struct ProfileImage: Codable {
