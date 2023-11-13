@@ -7,993 +7,116 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "86879A2C-09E8-4E05-8E95-433B839563CC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "tableView(_:heightForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6289A520-CF3B-4E9C-8E92-AEE30BCEF7D2"
+            uuid = "DFD64BFA-FEC3-4D18-A494-DAA70C15BD75"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "changeLike(photoId:isLike:_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "6289A520-CF3B-4E9C-8E92-AEE30BCEF7D2 - 96bd83d9295c1956"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.LikeResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "73"
-                  endingLineNumber = "73"
-                  offsetFromSymbolStart = "1608">
-               </Location>
-               <Location
-                  uuid = "6289A520-CF3B-4E9C-8E92-AEE30BCEF7D2 - 96bd83d9295c19d2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.LikeResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "77"
-                  endingLineNumber = "77"
-                  offsetFromSymbolStart = "1772">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "26FAE8F6-CBC1-480A-AA47-57D2DB1D6B92"
+            uuid = "EFE339D8-FF56-4F49-83B5-D31D694DF9CA"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "changeLike(photoId:isLike:_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "26FAE8F6-CBC1-480A-AA47-57D2DB1D6B92 - 96bd83d9295c19f3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.LikeResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
-                  offsetFromSymbolStart = "1872">
-               </Location>
-               <Location
-                  uuid = "26FAE8F6-CBC1-480A-AA47-57D2DB1D6B92 - 96bd83d9295c184f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.LikeResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "1908">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "05D87E60-9BFF-4095-B382-0104A54FD54F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
-            landmarkName = "clickLikeImage(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "05D87E60-9BFF-4095-B382-0104A54FD54F - 301eed3fb55df2d1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "117"
-                  endingLineNumber = "117"
-                  offsetFromSymbolStart = "328">
-               </Location>
-               <Location
-                  uuid = "05D87E60-9BFF-4095-B382-0104A54FD54F - 301eed3fb55df11f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "328">
-               </Location>
-               <Location
-                  uuid = "05D87E60-9BFF-4095-B382-0104A54FD54F - 301eed3fb55df694"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "146"
-                  endingLineNumber = "146"
-                  offsetFromSymbolStart = "328">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F4F44FEB-0D5D-4921-B712-7820982FE33A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
-            landmarkName = "clickLikeImage(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F4F44FEB-0D5D-4921-B712-7820982FE33A - 301eed3fb55df2f0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "728">
-               </Location>
-               <Location
-                  uuid = "F4F44FEB-0D5D-4921-B712-7820982FE33A - 301eed3fb55df13e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "120"
-                  endingLineNumber = "120"
-                  offsetFromSymbolStart = "728">
-               </Location>
-               <Location
-                  uuid = "F4F44FEB-0D5D-4921-B712-7820982FE33A - 301eed3fb55df6b3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "147"
-                  endingLineNumber = "147"
-                  offsetFromSymbolStart = "728">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "56485040-1202-4160-9C8B-CEC33DA59938"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
-            landmarkName = "clickLikeImage(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "56485040-1202-4160-9C8B-CEC33DA59938 - 301eed3fb55df11f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "868">
-               </Location>
-               <Location
-                  uuid = "56485040-1202-4160-9C8B-CEC33DA59938 - 301eed3fb55df15d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "121"
-                  endingLineNumber = "121"
-                  offsetFromSymbolStart = "868">
-               </Location>
-               <Location
-                  uuid = "56485040-1202-4160-9C8B-CEC33DA59938 - 301eed3fb55df6d2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "148"
-                  endingLineNumber = "148"
-                  offsetFromSymbolStart = "868">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0EABD525-9A11-426E-BEE4-DD2E8B8EA651"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
-            landmarkName = "clickLikeImage(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0EABD525-9A11-426E-BEE4-DD2E8B8EA651 - 301eed3fb55df13e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "120"
-                  endingLineNumber = "120"
-                  offsetFromSymbolStart = "888">
-               </Location>
-               <Location
-                  uuid = "0EABD525-9A11-426E-BEE4-DD2E8B8EA651 - 29f35dd1ee13e3a4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "120"
-                  endingLineNumber = "120"
-                  offsetFromSymbolStart = "252">
-               </Location>
-               <Location
-                  uuid = "0EABD525-9A11-426E-BEE4-DD2E8B8EA651 - 301eed3fb55df17c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "888">
-               </Location>
-               <Location
-                  uuid = "0EABD525-9A11-426E-BEE4-DD2E8B8EA651 - 29f35dd1ee13e3e6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "252">
-               </Location>
-               <Location
-                  uuid = "0EABD525-9A11-426E-BEE4-DD2E8B8EA651 - 301eed3fb55df6f1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "149"
-                  endingLineNumber = "149"
-                  offsetFromSymbolStart = "888">
-               </Location>
-               <Location
-                  uuid = "0EABD525-9A11-426E-BEE4-DD2E8B8EA651 - 29f35dd1ee13e46b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "149"
-                  endingLineNumber = "149"
-                  offsetFromSymbolStart = "252">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "176DC0E9-1CF5-424B-9E81-DF5490D5DEAC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "144"
-            endingLineNumber = "144"
-            landmarkName = "clickLikeImage(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "176DC0E9-1CF5-424B-9E81-DF5490D5DEAC - 29f35dd1ee13e3e6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "272">
-               </Location>
-               <Location
-                  uuid = "176DC0E9-1CF5-424B-9E81-DF5490D5DEAC - 29f35dd1ee13e320"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "124"
-                  endingLineNumber = "124"
-                  offsetFromSymbolStart = "272">
-               </Location>
-               <Location
-                  uuid = "176DC0E9-1CF5-424B-9E81-DF5490D5DEAC - 29f35dd1ee13e7a5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "151"
-                  endingLineNumber = "151"
-                  offsetFromSymbolStart = "272">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5610C50B-A87E-4811-B91F-F9B14B31E4D4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "clickLikeImage(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "5610C50B-A87E-4811-B91F-F9B14B31E4D4 - 29f35dd1ee13e3e6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "122"
-                  endingLineNumber = "122"
-                  offsetFromSymbolStart = "272">
-               </Location>
-               <Location
-                  uuid = "5610C50B-A87E-4811-B91F-F9B14B31E4D4 - 29f35dd1ee13e320"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "124"
-                  endingLineNumber = "124"
-                  offsetFromSymbolStart = "272">
-               </Location>
-               <Location
-                  uuid = "5610C50B-A87E-4811-B91F-F9B14B31E4D4 - 29f35dd1ee13e7a5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "151"
-                  endingLineNumber = "151"
-                  offsetFromSymbolStart = "272">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AAA222C5-78E6-44AF-966E-0CDC6681CE1B"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
-            landmarkName = "clickLikeImage(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "AAA222C5-78E6-44AF-966E-0CDC6681CE1B - 29f35dd1ee13e301"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "123"
-                  endingLineNumber = "123"
-                  offsetFromSymbolStart = "320">
-               </Location>
-               <Location
-                  uuid = "AAA222C5-78E6-44AF-966E-0CDC6681CE1B - 29f35dd1ee13e343"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "125"
-                  endingLineNumber = "125"
-                  offsetFromSymbolStart = "320">
-               </Location>
-               <Location
-                  uuid = "AAA222C5-78E6-44AF-966E-0CDC6681CE1B - 29f35dd1ee13e7c4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "152"
-                  endingLineNumber = "152"
-                  offsetFromSymbolStart = "320">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "41122988-B4C8-4D03-8653-5FFAB3B084E2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "clickLikeImage(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "41122988-B4C8-4D03-8653-5FFAB3B084E2 - 29f35dd1ee13e320"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "124"
-                  endingLineNumber = "124"
-                  offsetFromSymbolStart = "488">
-               </Location>
-               <Location
-                  uuid = "41122988-B4C8-4D03-8653-5FFAB3B084E2 - 29f35dd1ee13e362"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "126"
-                  endingLineNumber = "126"
-                  offsetFromSymbolStart = "488">
-               </Location>
-               <Location
-                  uuid = "41122988-B4C8-4D03-8653-5FFAB3B084E2 - 29f35dd1ee13e7e7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "153"
-                  endingLineNumber = "153"
-                  offsetFromSymbolStart = "488">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CCFE94CF-2BC4-416E-B1A1-1456D4DC09B7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
-            landmarkName = "clickLikeImage(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "CCFE94CF-2BC4-416E-B1A1-1456D4DC09B7 - 29f35dd1ee13e343"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "125"
-                  endingLineNumber = "125"
-                  offsetFromSymbolStart = "656">
-               </Location>
-               <Location
-                  uuid = "CCFE94CF-2BC4-416E-B1A1-1456D4DC09B7 - 29f35dd1ee13e2bd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "656">
-               </Location>
-               <Location
-                  uuid = "CCFE94CF-2BC4-416E-B1A1-1456D4DC09B7 - 29f35dd1ee13e2bd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "668">
-               </Location>
-               <Location
-                  uuid = "CCFE94CF-2BC4-416E-B1A1-1456D4DC09B7 - 29f35dd1ee13e706"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "154"
-                  endingLineNumber = "154"
-                  offsetFromSymbolStart = "668">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "35C22567-2CFC-4C92-B797-DD03B8E47665"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "149"
-            endingLineNumber = "149"
-            landmarkName = "clickLikeImage(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "35C22567-2CFC-4C92-B797-DD03B8E47665 - 29f35dd1ee13e362"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "126"
-                  endingLineNumber = "126"
-                  offsetFromSymbolStart = "688">
-               </Location>
-               <Location
-                  uuid = "35C22567-2CFC-4C92-B797-DD03B8E47665 - 29f35dd1ee13e2dc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "128"
-                  endingLineNumber = "128"
-                  offsetFromSymbolStart = "688">
-               </Location>
-               <Location
-                  uuid = "35C22567-2CFC-4C92-B797-DD03B8E47665 - 29f35dd1ee13e2dc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "128"
-                  endingLineNumber = "128"
-                  offsetFromSymbolStart = "700">
-               </Location>
-               <Location
-                  uuid = "35C22567-2CFC-4C92-B797-DD03B8E47665 - 29f35dd1ee13e721"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "155"
-                  endingLineNumber = "155"
-                  offsetFromSymbolStart = "700">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E332F680-14D1-413E-81EC-C41F1BB3C458"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "150"
-            endingLineNumber = "150"
-            landmarkName = "clickLikeImage(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E332F680-14D1-413E-81EC-C41F1BB3C458 - 29f35dd1ee13e2bd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "127"
-                  endingLineNumber = "127"
-                  offsetFromSymbolStart = "752">
-               </Location>
-               <Location
-                  uuid = "E332F680-14D1-413E-81EC-C41F1BB3C458 - 29f35dd1ee13e2ff"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "129"
-                  endingLineNumber = "129"
-                  offsetFromSymbolStart = "752">
-               </Location>
-               <Location
-                  uuid = "E332F680-14D1-413E-81EC-C41F1BB3C458 - 29f35dd1ee13e2ff"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "129"
-                  endingLineNumber = "129"
-                  offsetFromSymbolStart = "764">
-               </Location>
-               <Location
-                  uuid = "E332F680-14D1-413E-81EC-C41F1BB3C458 - 29f35dd1ee13e740"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "156"
-                  endingLineNumber = "156"
-                  offsetFromSymbolStart = "764">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "86A863F4-F134-4668-B7B9-F42717680DD6"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
-            landmarkName = "clickLikeImage(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "86A863F4-F134-4668-B7B9-F42717680DD6 - 29f35dd1ee13e2dc"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "128"
-                  endingLineNumber = "128"
-                  offsetFromSymbolStart = "772">
-               </Location>
-               <Location
-                  uuid = "86A863F4-F134-4668-B7B9-F42717680DD6 - 29f35dd1ee13e21e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "130"
-                  endingLineNumber = "130"
-                  offsetFromSymbolStart = "772">
-               </Location>
-               <Location
-                  uuid = "86A863F4-F134-4668-B7B9-F42717680DD6 - 29f35dd1ee13e21e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "130"
-                  endingLineNumber = "130"
-                  offsetFromSymbolStart = "784">
-               </Location>
-               <Location
-                  uuid = "86A863F4-F134-4668-B7B9-F42717680DD6 - 29f35dd1ee13e763"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListViewController.clickLikeImage(ImageFeed.ImagesListCell) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "157"
-                  endingLineNumber = "157"
-                  offsetFromSymbolStart = "784">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C9E21A9B-13A8-4265-A0A2-1D2C98DA1C51"
+            uuid = "3CCA3E4F-2FDD-4C49-89D8-F04F191A1DE9"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "makeFetchLikeRequest(photoID:isLike:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9DABE0F8-E9A7-4F79-A2C0-873AD146F810"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "makeFetchLikeRequest(photoID:isLike:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9E71047-534D-41DC-AB17-F25E45579513"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "makeFetchLikeRequest(photoID:isLike:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9614AA66-39F7-4518-8879-C627E883BF22"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "makeFetchLikeRequest(photoID:isLike:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C4CDDF80-CC89-4292-A7EF-8B119615BBB7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "changeLike(photoId:isLike:_:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "C9E21A9B-13A8-4265-A0A2-1D2C98DA1C51 - 1643a41a48f1f782"
+                  uuid = "C4CDDF80-CC89-4292-A7EF-8B119615BBB7 - 1643a41a48f1f5d0"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1003,24 +126,39 @@
                   urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "284">
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "528">
                </Location>
                <Location
-                  uuid = "C9E21A9B-13A8-4265-A0A2-1D2C98DA1C51 - 1643a41a48f1f706"
+                  uuid = "C4CDDF80-CC89-4292-A7EF-8B119615BBB7 - cb4bcbc76568b52f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Result&lt;ImageFeed.LikeResult, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "ImageFeed"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "304">
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "C4CDDF80-CC89-4292-A7EF-8B119615BBB7 - 7af6597f49cf2408"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;ImageFeed.LikeResult, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ImageFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "336">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1028,197 +166,23 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4BAFBBE7-E8B4-4BBA-8392-7B1B6D9532D5"
+            uuid = "5FA857BB-EA74-425A-91BA-9D6059151A8D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
             landmarkName = "changeLike(photoId:isLike:_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4BAFBBE7-E8B4-4BBA-8392-7B1B6D9532D5 - 1643a41a48f1f706"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "1024">
-               </Location>
-               <Location
-                  uuid = "4BAFBBE7-E8B4-4BBA-8392-7B1B6D9532D5 - 1643a41a48f1f48a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "57"
-                  endingLineNumber = "57"
-                  offsetFromSymbolStart = "1028">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5DCAB0C3-6B1D-4680-955F-520D6F0A9EB1"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "clikLikeButton(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F652199A-70AB-4415-83E0-0655A86A1E5A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "prepareForReuse()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "37C888D4-3496-4CA8-B2BC-488614DBB0BD"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "setIsLiked(isLiked:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8E18E4C5-7B75-421F-9B34-B5E5F2597345"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListCell.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "setIsLiked(isLiked:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EF8883D3-E8FE-4823-93F3-161AE9ADA5CC"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/Service/ImagesListService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "changeLike(photoId:isLike:_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EF8883D3-E8FE-4823-93F3-161AE9ADA5CC - 96bd83d9295c1fc2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.LikeResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "61"
-                  endingLineNumber = "61"
-                  offsetFromSymbolStart = "672">
-               </Location>
-               <Location
-                  uuid = "EF8883D3-E8FE-4823-93F3-161AE9ADA5CC - 96bd83d9295c1e5e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.LikeResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "892">
-               </Location>
-               <Location
-                  uuid = "EF8883D3-E8FE-4823-93F3-161AE9ADA5CC - 96bd83d9295c1e5e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.LikeResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "1076">
-               </Location>
-               <Location
-                  uuid = "EF8883D3-E8FE-4823-93F3-161AE9ADA5CC - 8daa78f681d2ae85"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (ImageFeed.Photo) -&gt; Swift.Bool in closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.LikeResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "56">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "23C8A549-3FB3-4043-9CA7-9451823AA2C7"
+            uuid = "3DC00B4B-CF7C-49D7-B813-C4D684C700D8"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -1231,64 +195,49 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "23C8A549-3FB3-4043-9CA7-9451823AA2C7 - 96bd83d9295c1e3d"
+                  uuid = "3DC00B4B-CF7C-49D7-B813-C4D684C700D8 - 7af6597f49cf24ef"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.LikeResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;ImageFeed.LikeResult, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "ImageFeed"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "892">
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "672">
                </Location>
                <Location
-                  uuid = "23C8A549-3FB3-4043-9CA7-9451823AA2C7 - 96bd83d9295c1e3d"
+                  uuid = "3DC00B4B-CF7C-49D7-B813-C4D684C700D8 - 7af6597f49cf24ef"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.LikeResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;ImageFeed.LikeResult, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "ImageFeed"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "1076">
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "808">
                </Location>
                <Location
-                  uuid = "23C8A549-3FB3-4043-9CA7-9451823AA2C7 - 8daa78f681d2aee6"
+                  uuid = "3DC00B4B-CF7C-49D7-B813-C4D684C700D8 - 9c47564e3b28a1f7"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (ImageFeed.Photo) -&gt; Swift.Bool in closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.LikeResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (ImageFeed.Photo) -&gt; Swift.Bool in closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;ImageFeed.LikeResult, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "ImageFeed"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
                   offsetFromSymbolStart = "56">
-               </Location>
-               <Location
-                  uuid = "23C8A549-3FB3-4043-9CA7-9451823AA2C7 - 96bd83d9295c1eb9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.LikeResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "1164">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1296,7 +245,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "92526F76-2B3B-4593-A6F5-D36740686235"
+            uuid = "D74776B9-1508-44C9-A215-3D0E66128185"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -1307,292 +256,68 @@
             endingLineNumber = "69"
             landmarkName = "changeLike(photoId:isLike:_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "92526F76-2B3B-4593-A6F5-D36740686235 - 96bd83d9295c1e1c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.LikeResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "1164">
-               </Location>
-               <Location
-                  uuid = "92526F76-2B3B-4593-A6F5-D36740686235 - 96bd83d9295c1e98"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.LikeResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.changeLike(photoId: Swift.String, isLike: Swift.Bool, _: (Swift.Result&lt;(), Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "1564">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B72FECBF-299E-42A5-89A0-2A9B7D1A8FFA"
+            uuid = "54005A38-BC1A-4484-A94A-1D90FD6E45C5"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
-            landmarkName = "updateTableViewAnimated()"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "changeLike(photoId:isLike:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "36CF6A5D-D9B4-49E3-9CA2-7077F8BC7C7A"
+            uuid = "A5D0EF07-3F9F-42B3-8CD8-A4E560786CCF"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "updateTableViewAnimated()"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "changeLike(photoId:isLike:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "16468706-F8ED-4189-9A17-0A2872DA8D4D"
+            uuid = "68F1FB4B-9034-4E0E-9A4B-7611269787D0"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "updateTableViewAnimated()"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "changeLike(photoId:isLike:_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F85CEE13-2DEB-4E40-AAE9-E3EFAF07CA7C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "updateTableViewAnimated()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D2AF3439-C6B1-4EA3-A123-F41A318373E2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "updateTableViewAnimated()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D2AF3439-C6B1-4EA3-A123-F41A318373E2 - c00bae9ef0806c0c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ImagesListViewController.updateTableViewAnimated() -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "492">
-               </Location>
-               <Location
-                  uuid = "D2AF3439-C6B1-4EA3-A123-F41A318373E2 - 71b024624c883da8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in ImageFeed.ImagesListViewController.updateTableViewAnimated() -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "132">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "FB8DB7BD-8AF2-47CA-9148-C0CB91B450C4"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
-            landmarkName = "updateTableViewAnimated()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "FB8DB7BD-8AF2-47CA-9148-C0CB91B450C4 - 71b024624c883c49"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in ImageFeed.ImagesListViewController.updateTableViewAnimated() -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "148">
-               </Location>
-               <Location
-                  uuid = "FB8DB7BD-8AF2-47CA-9148-C0CB91B450C4 - ad10a30a383b2410"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Int) -&gt; Foundation.IndexPath in closure #1 () -&gt; () in ImageFeed.ImagesListViewController.updateTableViewAnimated() -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BFC23844-EFAD-4369-B68E-EB02153CA0F0"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "updateTableViewAnimated()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9000C74C-4437-4184-A9C3-3205C7E00E95"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "updateTableViewAnimated()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8A189736-09FD-4A6F-A32E-02C6BBC62749"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "updateTableViewAnimated()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8A189736-09FD-4A6F-A32E-02C6BBC62749 - 71b024624c883ccd"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in ImageFeed.ImagesListViewController.updateTableViewAnimated() -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "624">
-               </Location>
-               <Location
-                  uuid = "8A189736-09FD-4A6F-A32E-02C6BBC62749 - fa6776dec795bfe"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Bool) -&gt; () in ImageFeed.ImagesListViewController.updateTableViewAnimated() -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "24">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "862A08A4-20AD-48F7-AC27-2578DF67F487"
-            shouldBeEnabled = "No"
+            uuid = "A3E17DC3-0E0C-4B50-934A-FB204D8F36FD"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageFeed/Helpers/URLSessionExtension.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
             landmarkName = "objectTask(for:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1600,20 +325,35 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "04FA19A5-3261-4856-8BED-7C5BC8771BCD"
-            shouldBeEnabled = "No"
+            uuid = "2B356AF0-3178-42D0-8071-F9B998C5D824"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageFeed/Helpers/URLSessionExtension.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "objectTask(for:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "04FA19A5-3261-4856-8BED-7C5BC8771BCD - db950bb266986b8b"
+                  uuid = "2B356AF0-3178-42D0-8071-F9B998C5D824 - ca32601eada20583"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__C.NSURLSession.objectTask&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(for: Foundation.URLRequest, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; __C.NSURLSessionTask"
+                  moduleName = "ImageFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Helpers/URLSessionExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  uuid = "2B356AF0-3178-42D0-8071-F9B998C5D824 - db950bb266986b28"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -1623,24 +363,9 @@
                   urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Helpers/URLSessionExtension.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "716">
-               </Location>
-               <Location
-                  uuid = "04FA19A5-3261-4856-8BED-7C5BC8771BCD - db950bb266986b8b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in __C.NSURLSession.objectTask&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(for: Foundation.URLRequest, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; __C.NSURLSessionTask"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Helpers/URLSessionExtension.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "1116">
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "496">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1648,8 +373,72 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3F3FF39F-987C-4553-994D-0D9D0D0A7FD4"
-            shouldBeEnabled = "No"
+            uuid = "780EE996-8442-4FF8-8962-BA956DA92145"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/Helpers/URLSessionExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "objectTask(for:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F4883159-0354-49B1-B1CE-4CD0CA9A5C95"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/Helpers/URLSessionExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "objectTask(for:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECB041B4-5A74-4C2F-AEB9-5AAFF648F886"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/Helpers/URLSessionExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "objectTask(for:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E91A6CFD-AB53-4C52-B9E1-3DB93CDDC205"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/Helpers/URLSessionExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "objectTask(for:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A5FF31E-9509-4E18-8E79-FE545CDDF6BD"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageFeed/Helpers/URLSessionExtension.swift"
@@ -1664,8 +453,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C45C8510-0D84-4E53-B1CE-D79D66B01373"
-            shouldBeEnabled = "No"
+            uuid = "19D2F3C2-CC1C-44DB-BFA7-936F33005D08"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageFeed/Helpers/URLSessionExtension.swift"
@@ -1680,8 +469,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3C56CABB-7FEE-4511-A2C1-94811FC8E436"
-            shouldBeEnabled = "No"
+            uuid = "E6C2BE82-5107-4BDA-AD3C-E07FE93738DF"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageFeed/Helpers/URLSessionExtension.swift"
@@ -1696,8 +485,8 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B859CA18-DCFF-4B49-BFDC-A7313B6A957D"
-            shouldBeEnabled = "No"
+            uuid = "0B951A2E-F6A6-4471-869B-9CCC07637B2B"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ImageFeed/Helpers/URLSessionExtension.swift"
@@ -1712,63 +501,126 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5B131C79-9EC1-4D38-8E5F-EE9D15073F94"
-            shouldBeEnabled = "No"
+            uuid = "D87E0E38-7FE6-4122-8DA8-41B7C0116A0D"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageFeed/Helpers/URLSessionExtension.swift"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "objectTask(for:completion:)"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "fetchPhotosNextPage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6728A55D-C8EF-4E5A-A7B5-01CCDC998836"
-            shouldBeEnabled = "No"
+            uuid = "3E1FE254-365E-403A-AD9B-41F9A7F65BD4"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageFeed/Helpers/URLSessionExtension.swift"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "objectTask(for:completion:)"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchPhotosNextPage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D1D1940-4693-48CC-B596-6543848A5E7F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetchPhotosNextPage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "053D7E85-CD52-47AD-9516-70DC9A91EC18"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "fetchPhotosNextPage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2C5610C9-866D-4A43-8A50-039712BD9117"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchPhotosNextPage()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "6728A55D-C8EF-4E5A-A7B5-01CCDC998836 - 48ca05702685d1c1"
+                  uuid = "2C5610C9-866D-4A43-8A50-039712BD9117 - bc1125b36d9fa0cf"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; () in __C.NSURLSession.objectTask&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(for: Foundation.URLRequest, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; __C.NSURLSessionTask"
+                  symbolName = "ImageFeed.ImagesListService.fetchPhotosNextPage() -&gt; ()"
                   moduleName = "ImageFeed"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Helpers/URLSessionExtension.swift"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "296">
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "1116">
                </Location>
                <Location
-                  uuid = "6728A55D-C8EF-4E5A-A7B5-01CCDC998836 - c5b1b565e2d44c76"
+                  uuid = "2C5610C9-866D-4A43-8A50-039712BD9117 - 73b96a2d6bf57c68"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; () in __C.NSURLSession.objectTask&lt;&#x3c4;_0_0 where &#x3c4;_0_0: Swift.Decodable&gt;(for: Foundation.URLRequest, completion: (Swift.Result&lt;&#x3c4;_0_0, Swift.Error&gt;) -&gt; ()) -&gt; __C.NSURLSessionTask"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.PhotoResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.fetchPhotosNextPage() -&gt; ()"
                   moduleName = "ImageFeed"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Helpers/URLSessionExtension.swift"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "68">
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "2C5610C9-866D-4A43-8A50-039712BD9117 - 67435230291822b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.PhotoResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.fetchPhotosNextPage() -&gt; ()"
+                  moduleName = "ImageFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "132">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1776,63 +628,63 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "52692A1F-78C1-43EF-9AB0-7145A914696C"
+            uuid = "65AAF05E-0380-4308-BB33-6E3913ACB3A3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageFeed/Service/ProfileService.swift"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "clean()"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "fetchPhotosNextPage()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "88628839-E9CA-4010-9FF0-0DD18D8ADAEC"
+            uuid = "A1252033-C510-4B72-91EA-A1575AF64588"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageFeed/Service/ProfileService.swift"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "clean()"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "fetchPhotosNextPage()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "88628839-E9CA-4010-9FF0-0DD18D8ADAEC - 2bf504e01ff07e33"
+                  uuid = "A1252033-C510-4B72-91EA-A1575AF64588 - 6743523029182ce"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "ImageFeed.ProfileService.clean() -&gt; ()"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.PhotoResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.fetchPhotosNextPage() -&gt; ()"
                   moduleName = "ImageFeed"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ProfileService.swift"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "220">
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "432">
                </Location>
                <Location
-                  uuid = "88628839-E9CA-4010-9FF0-0DD18D8ADAEC - 23c6592ddfa2f60a"
+                  uuid = "A1252033-C510-4B72-91EA-A1575AF64588 - 971680ce0eeffb4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;__C.WKWebsiteDataRecord&gt;) -&gt; () in ImageFeed.ProfileService.clean() -&gt; ()"
+                  symbolName = "closure #1 (ImageFeed.PhotoResult) -&gt; ImageFeed.Photo in closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;ImageFeed.PhotoResult&gt;, Swift.Error&gt;) -&gt; () in ImageFeed.ImagesListService.fetchPhotosNextPage() -&gt; ()"
                   moduleName = "ImageFeed"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ProfileService.swift"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ImagesListService.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "44">
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "52">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1840,113 +692,320 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A1F2DE59-D30B-4A3E-B9F4-7C981206A88A"
+            uuid = "6CB91EDB-6047-4037-B8B5-CADB9097D2D3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageFeed/Service/ProfileService.swift"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "clean()"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "fetchPhotosNextPage()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "A1F2DE59-D30B-4A3E-B9F4-7C981206A88A - 23c6592ddfa2f62b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Array&lt;__C.WKWebsiteDataRecord&gt;) -&gt; () in ImageFeed.ProfileService.clean() -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ProfileService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "60">
-               </Location>
-               <Location
-                  uuid = "A1F2DE59-D30B-4A3E-B9F4-7C981206A88A - 479aaff24d66b690"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.WKWebsiteDataRecord) -&gt; () in closure #1 (Swift.Array&lt;__C.WKWebsiteDataRecord&gt;) -&gt; () in ImageFeed.ProfileService.clean() -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ProfileService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "48"
-                  endingLineNumber = "48"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "678D5089-0D45-4DB2-AEE2-55A2AAFF97F9"
+            uuid = "AB1E18E7-F8D2-405D-9176-8C06CFA9B13E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageFeed/Service/ProfileService.swift"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "clean()"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "fetchPhotosNextPage()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "678D5089-0D45-4DB2-AEE2-55A2AAFF97F9 - 479aaff24d66b773"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.WKWebsiteDataRecord) -&gt; () in closure #1 (Swift.Array&lt;__C.WKWebsiteDataRecord&gt;) -&gt; () in ImageFeed.ProfileService.clean() -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ProfileService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "64">
-               </Location>
-               <Location
-                  uuid = "678D5089-0D45-4DB2-AEE2-55A2AAFF97F9 - abd1377618699d5f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in closure #1 (__C.WKWebsiteDataRecord) -&gt; () in closure #1 (Swift.Array&lt;__C.WKWebsiteDataRecord&gt;) -&gt; () in ImageFeed.ProfileService.clean() -&gt; ()"
-                  moduleName = "ImageFeed"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/Service/ProfileService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F7193B31-60B2-4F5A-8ADA-90B97BD26024"
+            uuid = "83E25A7F-64BC-48B0-ABAB-3C17FA113A71"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ImageFeed/ViewControllers/ProfileViewController.swift"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "fetchPhotosNextPage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1331768A-3D54-43A1-8922-9F1A24A276D4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/Service/ImagesListService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
             endingLineNumber = "46"
-            landmarkName = "ProfileViewController"
-            landmarkType = "3">
+            landmarkName = "fetchPhotosNextPage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3ADE7817-FE1F-4834-87E2-A932A8565CBA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/Auth/ImagesListPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C6794600-7FD8-4902-96AC-196D4CC8E0B4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/Auth/ImagesListPresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "fetchPhotosNextPage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1982DA04-5C6D-4220-8D6F-10B9CEB9078B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "tableView(_:willDisplay:forRowAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1982DA04-5C6D-4220-8D6F-10B9CEB9078B - a7000d0bf94306f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeed.ImagesListViewController.tableView(_: __C.UITableView, willDisplay: __C.UITableViewCell, forRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "ImageFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "1982DA04-5C6D-4220-8D6F-10B9CEB9078B - a7000d0bf94306f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeed.ImagesListViewController.tableView(_: __C.UITableView, willDisplay: __C.UITableViewCell, forRowAt: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "ImageFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "133"
+                  endingLineNumber = "133"
+                  offsetFromSymbolStart = "304">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E14534D-7423-4861-8511-998834196A89"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0E14534D-7423-4861-8511-998834196A89 - f0f445f2ab569817"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeed.ImagesListViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ImageFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "0E14534D-7423-4861-8511-998834196A89 - f0f445f2ab569870"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeed.ImagesListViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ImageFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "0E14534D-7423-4861-8511-998834196A89 - f0f445f2ab569870"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeed.ImagesListViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "ImageFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45F10726-1A76-416B-A009-D4DE16F59608"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "configCell(for:with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "45F10726-1A76-416B-A009-D4DE16F59608 - 5528b293eaa29931"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Kingfisher.RetrieveImageResult, Kingfisher.KingfisherError&gt;) -&gt; () in ImageFeed.ImagesListViewController.configCell(for: ImageFeed.ImagesListCell, with: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "ImageFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "760">
+               </Location>
+               <Location
+                  uuid = "45F10726-1A76-416B-A009-D4DE16F59608 - 5528b293eaa29931"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Kingfisher.RetrieveImageResult, Kingfisher.KingfisherError&gt;) -&gt; () in ImageFeed.ImagesListViewController.configCell(for: ImageFeed.ImagesListCell, with: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "ImageFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "81"
+                  endingLineNumber = "81"
+                  offsetFromSymbolStart = "1472">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B52F632-6BB0-47C3-97D5-BA858C50B488"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "configCell(for:with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2B52F632-6BB0-47C3-97D5-BA858C50B488 - 5528b293eaa29977"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Kingfisher.RetrieveImageResult, Kingfisher.KingfisherError&gt;) -&gt; () in ImageFeed.ImagesListViewController.configCell(for: ImageFeed.ImagesListCell, with: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "ImageFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "1472">
+               </Location>
+               <Location
+                  uuid = "2B52F632-6BB0-47C3-97D5-BA858C50B488 - 5528b293eaa29977"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Kingfisher.RetrieveImageResult, Kingfisher.KingfisherError&gt;) -&gt; () in ImageFeed.ImagesListViewController.configCell(for: ImageFeed.ImagesListCell, with: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "ImageFeed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinatsharafutdinov/Documents/%D0%9E%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5/ImageFeed/ImageFeed/ViewControllers/ImagesListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "1804">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5771770-EF71-4547-BAD3-3AC4754C5199"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeed/ViewControllers/ImagesListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "presenter"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

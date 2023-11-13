@@ -2,37 +2,37 @@ import UIKit
 import Kingfisher
 import ProgressHUD
 
-class ImagesListViewController: UIViewController {
+protocol ImagesListViewControllerProtocol: AnyObject {
+    
+    var presenter: ImagesListPresenterProtocol? { get set }
+    var photos: [Photo] { get set }
+    func updateTableViewAnimated()
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
+}
+    
+final class ImagesListViewController: UIViewController & ImagesListViewControllerProtocol {
     
     //MARK:  - IB Outlets
     @IBOutlet private weak var tableView: UITableView!
     
     //MARK:  - Public Properties
     var photos: [Photo] = []
-    weak var delegate: ImagesListCellDelegate?
+    lazy var presenter: ImagesListPresenterProtocol? = {
+        return ImagesListPresenter()
+    }()
 
     //MARK:  - Private Properties
     private let showSingleImageSegueIdentifier = "ShowSingleImage"
-    private let imagesListService = ImagesListService()
-    private var imageListServiceObserver: NSObjectProtocol?
+    //private let imagesListService = ImagesListService()
     private let placeholder = UIImage(named: "stubImage")
     
     //MARK:  - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.contentInset = UIEdgeInsets(top: 12, left: 0, bottom: 12, right: 0)
+        presenter?.viewDidLoad()
+        presenter?.view = self
         
-        imageListServiceObserver = NotificationCenter.default
-            .addObserver(
-                forName: ImagesListService.didChangeNotification,
-                object: nil,
-                queue: .main
-            ) { [weak self] _ in
-                guard let self = self else { return }
-                self.updateTableViewAnimated()
-            }
-        imagesListService.fetchPhotosNextPage()
     }
     
     //MARK:  - Overrides Methods
@@ -51,8 +51,9 @@ class ImagesListViewController: UIViewController {
     //MARK:  - Public Methods
     func updateTableViewAnimated() {
         let oldCount = photos.count
-        let newCount = imagesListService.photos.count
-        photos = imagesListService.photos
+        guard let newCount = presenter?.imagesListService.photos.count else { return }
+        guard let presenterPhotos = presenter?.imagesListService.photos else { return }
+        photos = presenterPhotos
         if oldCount != newCount {
             tableView.performBatchUpdates {
                 let indexPaths = (oldCount..<newCount).map { i in
@@ -75,13 +76,14 @@ class ImagesListViewController: UIViewController {
                 }
                 switch result {
                 case .success:
+                    guard let presenterPhotos = self.presenter?.imagesListService.photos else { return }
                     if let created = photo.createdAt {
                         cell.dataLabel.text = DateFormatter.dateFormatter.string(from: created)
                     } else {
                         cell.dataLabel.text = ""
                     }
                     cell.setIsLiked(isLiked: self.photos[indexPath.row].isLiked)
-                    self.photos = self.imagesListService.photos
+                    self.photos = presenterPhotos
                 case .failure (let error):
                     print("Изображение не загружено: \(error)")
                     cell.imageCell.image = placeholder
@@ -128,7 +130,7 @@ extension ImagesListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row + 1 == tableView.numberOfRows(inSection: 0) {
-            imagesListService.fetchPhotosNextPage()
+            presenter?.fetchPhotosNextPage()
         }
     }
 }
@@ -140,10 +142,11 @@ extension ImagesListViewController: ImagesListCellDelegate {
         guard let indexPath = tableView.indexPath(for: cell) else { return }
         let photo = photos[indexPath.row]
         UIBlockingProgressHUD.show()
-        imagesListService.changeLike(photoId: photo.id, isLike: !photo.isLiked) { result in
+        presenter?.changeLike(photoId: photo.id, isLike: !photo.isLiked) { result in
             switch result {
             case .success:
-                self.photos = self.imagesListService.photos
+                guard let presenterPhotos = self.presenter?.imagesListService.photos else { return }
+                self.photos = presenterPhotos
                 cell.setIsLiked(isLiked: self.photos[indexPath.row].isLiked)
                 UIBlockingProgressHUD.dismiss()
             case .failure (let error):

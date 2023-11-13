@@ -42,6 +42,7 @@
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Qy-lK-Rx6" userLabel="LikeButton">
                                                     <rect key="frame" x="354" y="4" width="44" height="44"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="LikeButton"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="likeButtonOn"/>
                                                     <connections>
@@ -152,6 +153,7 @@
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kc2-fo-CvX">
                                 <rect key="frame" x="8" y="11" width="48" height="48"/>
+                                <accessibility key="accessibilityConfiguration" identifier="BackBatton"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Lrp-PE-e8g"/>
                                     <constraint firstAttribute="width" constant="48" id="jRk-KC-ud5"/>
@@ -203,7 +205,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="authorizationImage" translatesAutoresizingMaskIntoConstraints="NO" id="Z8a-wg-1Ck">
-                                <rect key="frame" x="177" y="280" width="60" height="60"/>
+                                <rect key="frame" x="177" y="418" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="dI9-4s-LxA"/>
                                     <constraint firstAttribute="width" constant="60" id="oRB-D6-4gT"/>
@@ -212,6 +214,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOc-GY-GvJ">
                                 <rect key="frame" x="16" y="724" width="382" height="48"/>
                                 <color key="backgroundColor" name="YP White"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Authenticate"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="Sxa-Q4-YOT"/>
                                 </constraints>
@@ -235,11 +238,11 @@
                         <viewLayoutGuide key="safeArea" id="sa8-TM-NKr"/>
                         <color key="backgroundColor" name="YP Black"/>
                         <constraints>
-                            <constraint firstItem="Z8a-wg-1Ck" firstAttribute="top" secondItem="wRO-Qb-iZ2" secondAttribute="top" constant="280" id="Dwt-uT-Isl"/>
                             <constraint firstAttribute="bottom" secondItem="hOc-GY-GvJ" secondAttribute="bottom" constant="124" id="FkK-O4-U7o"/>
                             <constraint firstItem="hOc-GY-GvJ" firstAttribute="centerX" secondItem="wRO-Qb-iZ2" secondAttribute="centerX" id="TUk-Vj-5w5"/>
                             <constraint firstItem="Z8a-wg-1Ck" firstAttribute="centerX" secondItem="wRO-Qb-iZ2" secondAttribute="centerX" id="XaU-oL-FY7"/>
                             <constraint firstItem="hOc-GY-GvJ" firstAttribute="leading" secondItem="sa8-TM-NKr" secondAttribute="leading" constant="16" id="ZZn-PJ-Mp0"/>
+                            <constraint firstItem="Z8a-wg-1Ck" firstAttribute="centerY" secondItem="wRO-Qb-iZ2" secondAttribute="centerY" id="gr6-ks-qBT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DbZ-Ny-pvD"/>
@@ -251,7 +254,7 @@
         <!--Web View View Controller-->
         <scene sceneID="vsX-2l-Kc3">
             <objects>
-                <viewController id="868-Wp-GY2" customClass="WebViewViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewViewController" id="868-Wp-GY2" customClass="WebViewViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7wg-bq-CF9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

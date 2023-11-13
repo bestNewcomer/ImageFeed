@@ -48,7 +48,7 @@ extension ProfileImageService {
         builder.makeHTTPRequest(
             path: "/me",
             httpMethod: "GET",
-            baseURLString: Constants.defaultBaseURL
+            baseURLString: Constants.defaultApiBaseURL
         )
     }
 }

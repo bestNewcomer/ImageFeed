@@ -6,6 +6,7 @@ final class ImagesListService {
     static let didChangeNotification = Notification.Name(rawValue: "ImageListServiceDidChange")
     
     //MARK:  - Private Properties
+    static let shared = ImagesListService()
     private (set) var photos: [Photo] = []
     private var lastLoadedPage: Int?
     private var currentTask: URLSessionTask?
@@ -96,7 +97,7 @@ extension ImagesListService {
                    + "page=\(page)"
                    + "&&per_page=\(perPage)"),
             httpMethod: "GET",
-            baseURLString: Constants.defaultBaseURL
+            baseURLString: Constants.defaultApiBaseURL
         )
     }
     
@@ -104,7 +105,7 @@ extension ImagesListService {
         builder.makeHTTPRequest(
             path: "/photos/\(photoID)/like",
             httpMethod: isLike ? "POST" : "DELETE",
-            baseURLString: Constants.defaultBaseURL
+            baseURLString: Constants.defaultApiBaseURL
         )
     }
 }
