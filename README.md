@@ -19,7 +19,7 @@
 ## **Стек технологий**
 
 - Swift
-- Архитектура: MVC,MVVM
+- Архитектура: MVC
 - Вёрстка кодом
 - UIKit, UITableView, UITabBarController, WKWebView
 - URLSession
